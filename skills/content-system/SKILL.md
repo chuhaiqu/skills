@@ -13,8 +13,8 @@ description: "Use when content must become a reusable operating asset with sourc
 
 ## 开始前
 
-1. 先读 [来源索引](references/INDEX.md)，确认本技能使用的 Playbook 章节和来源快照。
-2. 根据下面的“参考资料路由”只加载当前任务需要的章节，不要默认一次读完全部参考资料。
+1. 先读 [来源索引](references/INDEX.md)，确认本技能使用的经验资料和内容快照。
+2. 根据下面的“参考资料路由”只加载当前任务需要的资料，不要默认一次读完全部参考资料。
 3. 收集当前业务阶段、目标用户或对象、已有证据、时间和预算、不可改变的约束，以及用户希望得到的最终交付物。
 4. 缺少信息时，先用已有材料推进；只有会实质改变方向的缺口才向用户提问，并明确暂用的假设。
 
@@ -28,9 +28,9 @@ description: "Use when content must become a reusable operating asset with sourc
 
 ## 参考资料路由
 
-- [27 把内容当成产品和经营资产](references/playbook-27.md)：建立材料库、内容对象、经营任务、证据链和维护规则。
-- [28 Build in Public 与个人品牌的长期边界](references/playbook-28.md)：设计 Build in Public 身份、披露等级、商业秘密和安全边界。
-- [31 跨平台内容治理：复用、多账号与创作者协作](references/playbook-31.md)：进行跨平台复用、多账号治理、创作者 Brief、权限和收权。
+- [27 把内容当成产品和经营资产](references/source-27.md)：建立材料库、内容对象、经营任务、证据链和维护规则。
+- [28 Build in Public 与个人品牌的长期边界](references/source-28.md)：设计 Build in Public 身份、披露等级、商业秘密和安全边界。
+- [31 跨平台内容治理：复用、多账号与创作者协作](references/source-31.md)：进行跨平台复用、多账号治理、创作者 Brief、权限和收权。
 
 ## 必须交付
 
@@ -44,8 +44,8 @@ description: "Use when content must become a reusable operating asset with sourc
 ## 质量与证据边界
 
 - 把已验证事实、用户提供的信息、解释、假设和待核验项明确分开。
-- 不发明案例、来源、数字、法律结论、平台规则或用户证据；Playbook 没有答案时直接说明。
+- 不发明案例、来源、数字、法律结论、平台规则或用户证据；现有资料没有答案时直接说明。
 - 对价格、法律、税务、平台政策、产品字段和市场规则等会变化的信息，使用当前权威一手来源核验，并记录核验日期。
-- 不在回答中大段复现参考章节。把方法应用到用户的具体情境，生成新的工作成果。
+- 不在回答中大段复现参考资料。把方法应用到用户的具体情境，生成新的工作成果。
 - 保留必要的风险、权利、隐私、披露和停止条件；不要为了显得确定而删除边界。
 - 默认使用用户的语言。中文交付应直接、具体、可复制，避免空泛的策略词。

@@ -20,16 +20,15 @@ const args = process.argv.slice(2);
 const sourceFlag = args.indexOf("--source");
 
 if (sourceFlag < 0 || !args[sourceFlag + 1]) {
-  throw new Error("Usage: node scripts/sync-playbook.mjs --source /path/to/playbook");
+  throw new Error("Usage: node scripts/sync-content.mjs --source /path/to/canonical-content-directory");
 }
 
-const sourceRoot = resolve(args[sourceFlag + 1]);
-const chaptersDir = join(sourceRoot, "content", "playbook", "chapters");
-if (!existsSync(chaptersDir)) {
-  throw new Error(`Playbook chapter directory not found: ${chaptersDir}`);
+const contentDir = resolve(args[sourceFlag + 1]);
+if (!existsSync(contentDir)) {
+  throw new Error(`Canonical content directory not found: ${contentDir}`);
 }
 
-const chapterSlugs = [
+const documentSlugs = [
   "solo-company", "business-model", "decisions", "english", "market", "users",
   "research", "interviews", "validation", "pmf", "scope", "requirements", "mvp",
   "positioning", "landing-page", "design", "design-handoff", "pricing", "trial",
@@ -40,18 +39,18 @@ const chapterSlugs = [
   "compliance",
 ];
 
-const files = readdirSync(chaptersDir)
+const files = readdirSync(contentDir)
   .filter((file) => /^\d+-.*\.md$/.test(file))
   .sort((a, b) => Number.parseInt(a, 10) - Number.parseInt(b, 10));
 
 if (files.length !== 48) {
-  throw new Error(`Expected 48 public Playbook chapters, found ${files.length}.`);
+  throw new Error(`Expected 48 canonical source documents, found ${files.length}.`);
 }
 
-const chapters = files.map((file, index) => {
+const documents = files.map((file, index) => {
   const number = Number.parseInt(file, 10);
-  if (number !== index + 1) throw new Error(`Unexpected chapter sequence at ${file}.`);
-  const sourcePath = join(chaptersDir, file);
+  if (number !== index + 1) throw new Error(`Unexpected source document sequence at ${file}.`);
+  const sourcePath = join(contentDir, file);
   const bytes = readFileSync(sourcePath);
   const text = bytes.toString("utf8");
   const title = text.match(/^#\s+(.+)$/m)?.[1]?.trim();
@@ -61,7 +60,7 @@ const chapters = files.map((file, index) => {
     file,
     sourcePath,
     title,
-    slug: chapterSlugs[index],
+    slug: documentSlugs[index],
     sha256: createHash("sha256").update(bytes).digest("hex"),
     bytes: bytes.length,
   };
@@ -69,7 +68,7 @@ const chapters = files.map((file, index) => {
 
 let sourceCommit = "unknown";
 try {
-  sourceCommit = execFileSync("git", ["-C", sourceRoot, "rev-parse", "HEAD"], {
+  sourceCommit = execFileSync("git", ["-C", contentDir, "rev-parse", "HEAD"], {
     encoding: "utf8",
     stdio: ["ignore", "pipe", "ignore"],
   }).trim();
@@ -91,32 +90,35 @@ function renderAgentYaml(skill) {
 }
 
 function renderNotice(skill) {
-  return `Chuhaiqu Playbook Skill: ${skill.displayName} (${skill.name})
+  return `出海去孵化器 Skill: ${skill.displayName} (${skill.name})
+Chuhaiqu Incubator Skill
 Copyright 2026 Velocity1, LLC
 
-This Skill is based on the Chuhaiqu Playbook by 出海去 (Chuhaiqu):
-https://chuhaiqu.club/playbook
+This Agent Skill is developed from the accumulated experience and practice of
+出海去孵化器 (Chuhaiqu Incubator), a community incubator for one-person
+companies and global growth:
+https://chuhaiqu.club/
 
 Licensed under the Apache License, Version 2.0. Redistributions must retain
 this NOTICE and the original copyright and attribution notices. Modified
 files must carry prominent notices stating that they were changed.
 
 A clear attribution for redistributed or adapted versions is:
-"Based on the Chuhaiqu Playbook Skills by 出海去 (Chuhaiqu),
+"Based on 出海去孵化器 Skills (Chuhaiqu Incubator Skills),
 Copyright 2026 Velocity1, LLC."
 
-Third-party materials identified in Playbook citations remain subject to
-their respective rights and terms. The License applies only to material
-that Velocity1, LLC is authorized to license.
+Third-party materials identified in source citations remain subject to their
+respective rights and terms. The License applies only to material that
+Velocity1, LLC is authorized to license.
 `;
 }
 
 function renderSkill(skill) {
   const routing = skill.referenceRouting.map((route) => {
-    const links = route.chapters
+    const links = route.sources
       .map((number) => {
-        const chapter = chapters[number - 1];
-        return `[${String(number).padStart(2, "0")} ${chapter.title}](references/playbook-${String(number).padStart(2, "0")}.md)`;
+        const document = documents[number - 1];
+        return `[${String(number).padStart(2, "0")} ${document.title}](references/source-${String(number).padStart(2, "0")}.md)`;
       })
       .join("、");
     return `- ${links}：${route.when}。`;
@@ -137,8 +139,8 @@ ${skill.goal}
 
 ## 开始前
 
-1. 先读 [来源索引](references/INDEX.md)，确认本技能使用的 Playbook 章节和来源快照。
-2. 根据下面的“参考资料路由”只加载当前任务需要的章节，不要默认一次读完全部参考资料。
+1. 先读 [来源索引](references/INDEX.md)，确认本技能使用的经验资料和内容快照。
+2. 根据下面的“参考资料路由”只加载当前任务需要的资料，不要默认一次读完全部参考资料。
 3. 收集当前业务阶段、目标用户或对象、已有证据、时间和预算、不可改变的约束，以及用户希望得到的最终交付物。
 4. 缺少信息时，先用已有材料推进；只有会实质改变方向的缺口才向用户提问，并明确暂用的假设。
 
@@ -159,34 +161,32 @@ ${skill.deliverables.map((item) => `- ${item}`).join("\n")}
 ## 质量与证据边界
 
 - 把已验证事实、用户提供的信息、解释、假设和待核验项明确分开。
-- 不发明案例、来源、数字、法律结论、平台规则或用户证据；Playbook 没有答案时直接说明。
+- 不发明案例、来源、数字、法律结论、平台规则或用户证据；现有资料没有答案时直接说明。
 - 对价格、法律、税务、平台政策、产品字段和市场规则等会变化的信息，使用当前权威一手来源核验，并记录核验日期。
-- 不在回答中大段复现参考章节。把方法应用到用户的具体情境，生成新的工作成果。
+- 不在回答中大段复现参考资料。把方法应用到用户的具体情境，生成新的工作成果。
 - 保留必要的风险、权利、隐私、披露和停止条件；不要为了显得确定而删除边界。
 - 默认使用用户的语言。中文交付应直接、具体、可复制，避免空泛的策略词。
 `;
 }
 
 function renderIndex(skill) {
-  const rows = skill.chapters.map((number) => {
-    const chapter = chapters[number - 1];
-    return `| ${String(number).padStart(2, "0")} | [${chapter.title}](playbook-${String(number).padStart(2, "0")}.md) | [官网](${map.source.website}/${chapter.slug}) | \`${chapter.sha256}\` |`;
+  const rows = skill.sources.map((number) => {
+    const document = documents[number - 1];
+    return `| ${String(number).padStart(2, "0")} | [${document.title}](source-${String(number).padStart(2, "0")}.md) | \`${document.sha256}\` |`;
   }).join("\n");
 
   return `# 来源索引
 
-本技能来自出海去公开 Playbook 的当前内容快照。参考文件保持源章节原文；技能本身负责把这些材料变成可执行工作流。
+本技能使用出海去孵化器过去几年在社区实践、嘉宾分享和实战课程中持续沉淀的经验资料。参考文件保持内容原文，技能负责把这些经验转化为可执行工作流。
 
-- 源仓库：${map.source.repository}
-- 官网：${map.source.website}
-- 源提交：\`${sourceCommit}\`
-- 同步规则：只读取 \`content/playbook/chapters/\` 下 48 个公开章节，不读取任何私有导入、逐字稿或内部资料。
+- 出海去孵化器：https://chuhaiqu.club/
+- 内容快照：\`${sourceCommit}\`
 
-| 章 | 内容 | 公开页面 | SHA-256 |
-| --- | --- | --- | --- |
+| 编号 | 资料 | SHA-256 |
+| --- | --- | --- |
 ${rows}
 
-需要引用对外事实时，优先打开官网或章节“参考资料”中的一手来源核验当前状态。
+需要引用对外事实时，优先使用资料中列出的一手来源核验当前状态。
 `;
 }
 
@@ -199,15 +199,15 @@ for (const skill of map.skills) {
   mkdirSync(referencesDir, { recursive: true });
 
   for (const file of readdirSync(referencesDir)) {
-    if (/^playbook-\d{2}\.md$/.test(file) || file === "INDEX.md") {
+    if (/^source-\d{2}\.md$/.test(file) || file === "INDEX.md") {
       unlinkSync(join(referencesDir, file));
     }
   }
 
-  for (const number of skill.chapters) {
-    const chapter = chapters[number - 1];
-    const target = join(referencesDir, `playbook-${String(number).padStart(2, "0")}.md`);
-    copyFileSync(chapter.sourcePath, target);
+  for (const number of skill.sources) {
+    const document = documents[number - 1];
+    const target = join(referencesDir, `source-${String(number).padStart(2, "0")}.md`);
+    copyFileSync(document.sourcePath, target);
   }
 
   writeFileSync(join(referencesDir, "INDEX.md"), renderIndex(skill));
@@ -219,18 +219,16 @@ for (const skill of map.skills) {
 }
 
 const corpusSha256 = createHash("sha256")
-  .update(Buffer.concat(chapters.map((chapter) => readFileSync(chapter.sourcePath))))
+  .update(Buffer.concat(documents.map((document) => readFileSync(document.sourcePath))))
   .digest("hex");
 
 writeFileSync(
   join(root, "source-lock.json"),
   `${JSON.stringify({
-    sourceRepository: map.source.repository,
-    sourceWebsite: map.source.website,
     sourceCommit,
     corpusSha256,
-    chapterCount: chapters.length,
-    chapters: chapters.map(({ number, file, title, slug, sha256, bytes }) => ({
+    documentCount: documents.length,
+    documents: documents.map(({ number, file, title, slug, sha256, bytes }) => ({
       number, file, title, slug, sha256, bytes,
     })),
   }, null, 2)}\n`,
@@ -251,7 +249,7 @@ for (const skill of map.skills) {
 
 writeFileSync(
   join(root, "CATALOG.md"),
-  `# Skill Catalog\n\n共 ${map.skills.length} 个可独立选择的 Skill。模块按用户要完成的工作划分，不按 48 章一一映射。\n\n${catalogSections}\n`,
+  `# 出海去孵化器 Skills\n\n面向「一人公司」和出海独立产品的可执行 Agent Skills。\n\n${catalogSections}\n`,
 );
 
-console.log(`Synced 48 chapters into ${map.skills.length} skills from ${sourceCommit}.`);
+console.log(`Synced the maintained content set into ${map.skills.length} skills from ${sourceCommit}.`);

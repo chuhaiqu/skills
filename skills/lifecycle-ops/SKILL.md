@@ -13,8 +13,8 @@ description: "Use when the user needs Aha and funnel diagnostics, onboarding exp
 
 ## 开始前
 
-1. 先读 [来源索引](references/INDEX.md)，确认本技能使用的 Playbook 章节和来源快照。
-2. 根据下面的“参考资料路由”只加载当前任务需要的章节，不要默认一次读完全部参考资料。
+1. 先读 [来源索引](references/INDEX.md)，确认本技能使用的经验资料和内容快照。
+2. 根据下面的“参考资料路由”只加载当前任务需要的资料，不要默认一次读完全部参考资料。
 3. 收集当前业务阶段、目标用户或对象、已有证据、时间和预算、不可改变的约束，以及用户希望得到的最终交付物。
 4. 缺少信息时，先用已有材料推进；只有会实质改变方向的缺口才向用户提问，并明确暂用的假设。
 
@@ -28,9 +28,9 @@ description: "Use when the user needs Aha and funnel diagnostics, onboarding exp
 
 ## 参考资料路由
 
-- [42 Onboarding、Aha Moment 与漏斗诊断](references/playbook-42.md)：定义价值事件、完整漏斗、分群、数据质量和每周诊断。
-- [43 邮件、支持、留存、退款与支付风控](references/playbook-43.md)：建立用户状态、生命周期邮件、支持、退款、争议和支付风控。
-- [13 MVP、最短价值路径与 Aha Moment](references/playbook-13.md)、[19 Trial、Freemium、退款与首次付费](references/playbook-19.md)、[21 单位经济：CAC、LTV、ROI、回收期与渠道容量](references/playbook-21.md)：补充价值路径、首次付费、净收入和单位经济。
+- [42 Onboarding、Aha Moment 与漏斗诊断](references/source-42.md)：定义价值事件、完整漏斗、分群、数据质量和每周诊断。
+- [43 邮件、支持、留存、退款与支付风控](references/source-43.md)：建立用户状态、生命周期邮件、支持、退款、争议和支付风控。
+- [13 MVP、最短价值路径与 Aha Moment](references/source-13.md)、[19 Trial、Freemium、退款与首次付费](references/source-19.md)、[21 单位经济：CAC、LTV、ROI、回收期与渠道容量](references/source-21.md)：补充价值路径、首次付费、净收入和单位经济。
 
 ## 必须交付
 
@@ -44,8 +44,8 @@ description: "Use when the user needs Aha and funnel diagnostics, onboarding exp
 ## 质量与证据边界
 
 - 把已验证事实、用户提供的信息、解释、假设和待核验项明确分开。
-- 不发明案例、来源、数字、法律结论、平台规则或用户证据；Playbook 没有答案时直接说明。
+- 不发明案例、来源、数字、法律结论、平台规则或用户证据；现有资料没有答案时直接说明。
 - 对价格、法律、税务、平台政策、产品字段和市场规则等会变化的信息，使用当前权威一手来源核验，并记录核验日期。
-- 不在回答中大段复现参考章节。把方法应用到用户的具体情境，生成新的工作成果。
+- 不在回答中大段复现参考资料。把方法应用到用户的具体情境，生成新的工作成果。
 - 保留必要的风险、权利、隐私、披露和停止条件；不要为了显得确定而删除边界。
 - 默认使用用户的语言。中文交付应直接、具体、可复制，避免空泛的策略词。

@@ -1,7 +1,6 @@
 {
   "source": {
-    "repository": "https://github.com/chuhaiqu/playbook",
-    "website": "https://chuhaiqu.club/playbook",
+    "website": "https://chuhaiqu.club",
     "copyright": "Velocity1, LLC"
   },
   "groups": [
@@ -22,12 +21,12 @@
       "description": "Use when the user needs to decide the next highest-leverage action across market, product, channel, retention, or compliance; triggers include 下一步、先做什么、增长诊断、优先级、卡点 and 路线图.",
       "goal": "把模糊的增长焦虑收敛为一个有证据、可执行、可复盘的下一步动作。",
       "notFor": "用户已经明确要求执行某个具体渠道或具体交付物时，直接使用对应的窄技能。",
-      "chapters": [2, 3, 10, 13, 21, 35, 42, 45, 48],
+      "sources": [2, 3, 10, 13, 21, 35, 42, 45, 48],
       "referenceRouting": [
-        { "chapters": [2, 3], "when": "经营方向不清、候选路径过多或证据不足" },
-        { "chapters": [10, 13, 42], "when": "卡点可能在 PMF、价值路径、激活或留存" },
-        { "chapters": [21, 35], "when": "需要比较渠道效率、容量和下一轮实验" },
-        { "chapters": [45, 48], "when": "下一步可能被主体、平台政策或合规前置条件阻断" }
+        { "sources": [2, 3], "when": "经营方向不清、候选路径过多或证据不足" },
+        { "sources": [10, 13, 42], "when": "卡点可能在 PMF、价值路径、激活或留存" },
+        { "sources": [21, 35], "when": "需要比较渠道效率、容量和下一轮实验" },
+        { "sources": [45, 48], "when": "下一步可能被主体、平台政策或合规前置条件阻断" }
       ],
       "workflow": [
         "确认当前阶段、目标结果、时间窗口和不可改变的约束。",
@@ -46,10 +45,10 @@
       "description": "Use when the user is choosing a solo-business path, deciding what to own or outsource, or comparing service, content, software, ecommerce, and ecosystem models; triggers include 一人公司、经营路径、外包、自动化 and 商业模式.",
       "goal": "选择与个人能力、现金、风险和生活约束相匹配的经营路径，并明确本人必须拥有的责任。",
       "notFor": "已经确定经营形态、只需要写具体外包任务时，使用 work-handoff。",
-      "chapters": [1, 2],
+      "sources": [1, 2],
       "referenceRouting": [
-        { "chapters": [1], "when": "判断哪些责任必须自己保留、哪些工作可外包或自动化" },
-        { "chapters": [2], "when": "比较不同经营形态并设计短周期路径实验" }
+        { "sources": [1], "when": "判断哪些责任必须自己保留、哪些工作可外包或自动化" },
+        { "sources": [2], "when": "比较不同经营形态并设计短周期路径实验" }
       ],
       "workflow": [
         "列出个人目标、可投入时间、现金缓冲、关键能力和风险承受度。",
@@ -68,9 +67,9 @@
       "description": "Use when research, AI output, plans, or conflicting sources must become a traceable decision; triggers include 决策日志、证据、来源核验、AI 判断、复盘 and 研究计划.",
       "goal": "让一个经营判断可以追溯来源、暴露假设、指导行动并在结果出现后更新规则。",
       "notFor": "只做某个具体领域研究时，结合该领域技能使用；本技能负责决策方法而非替代领域事实。",
-      "chapters": [3],
+      "sources": [3],
       "referenceRouting": [
-        { "chapters": [3], "when": "建立来源层级、研究清单、AI 使用边界、最小计划和决策日志" }
+        { "sources": [3], "when": "建立来源层级、研究清单、AI 使用边界、最小计划和决策日志" }
       ],
       "workflow": [
         "把决策写成明确问题，列出可选项、截止时间和不可逆后果。",
@@ -89,9 +88,9 @@
       "description": "Use when the user wants an English learning plan tied to real international work such as sales calls, demos, support, interviews, writing, or meetings; triggers include 商务英语、口语、海外沟通、英文演示 and 工作语言.",
       "goal": "把泛化的英语焦虑改造成围绕真实工作任务的输入、练习、反馈和复盘系统。",
       "notFor": "只需要翻译或润色一段现成文字时，不必使用本技能。",
-      "chapters": [4],
+      "sources": [4],
       "referenceRouting": [
-        { "chapters": [4], "when": "制作语言任务表、基线诊断、真实样本训练和阶段计划" }
+        { "sources": [4], "when": "制作语言任务表、基线诊断、真实样本训练和阶段计划" }
       ],
       "workflow": [
         "列出未来 30—90 天必须完成的英文工作任务及失败成本。",
@@ -110,12 +109,12 @@
       "description": "Use when work must be delegated to a contractor, employee, designer, developer, agency, or AI with clear ownership and acceptance; triggers include 外包、委派、需求交接、验收、Brief、接管 and 权限移交.",
       "goal": "把一个模糊委托变成可执行、可验收、可接管且权利和权限清楚的工作包。",
       "notFor": "只需要选择整体经营路径时，使用 solo-business。",
-      "chapters": [1, 12, 17, 48],
+      "sources": [1, 12, 17, 48],
       "referenceRouting": [
-        { "chapters": [1], "when": "确定所有权、外包总成本和本人必须保留的判断" },
-        { "chapters": [12], "when": "把需求写成流程、状态、示例、验收和异常处理" },
-        { "chapters": [17], "when": "设计、模板、Framer 或 AI 交付需要可接管" },
-        { "chapters": [48], "when": "处理成果权利、账号权限、安全和终止后的交接" }
+        { "sources": [1], "when": "确定所有权、外包总成本和本人必须保留的判断" },
+        { "sources": [12], "when": "把需求写成流程、状态、示例、验收和异常处理" },
+        { "sources": [17], "when": "设计、模板、Framer 或 AI 交付需要可接管" },
+        { "sources": [48], "when": "处理成果权利、账号权限、安全和终止后的交接" }
       ],
       "workflow": [
         "定义业务结果、用户场景、范围外事项和负责人，而不是只列动作。",
@@ -134,11 +133,11 @@
       "description": "Use when the user needs to turn a problem or idea into a testable market, ICP, job, scenario, competitor map, keyword set, or channel hypothesis; triggers include 市场研究、ICP、JTBD、竞品、关键词、使用场景 and 候选市场.",
       "goal": "把个人痛点或产品想法转成有付费主体、真实任务、替代方案和可触达渠道的候选市场。",
       "notFor": "需要直接访谈真实用户时，使用 user-interviews；需要跑验证实验时，使用 demand-validation。",
-      "chapters": [5, 6, 7],
+      "sources": [5, 6, 7],
       "referenceRouting": [
-        { "chapters": [5], "when": "从个人痛点识别付费者、使用者、受益者和问题强度" },
-        { "chapters": [6], "when": "定义核心用户、JTBD、触发场景和当前流程" },
-        { "chapters": [7], "when": "研究竞品、关键词、渠道、评价和候选市场证据" }
+        { "sources": [5], "when": "从个人痛点识别付费者、使用者、受益者和问题强度" },
+        { "sources": [6], "when": "定义核心用户、JTBD、触发场景和当前流程" },
+        { "sources": [7], "when": "研究竞品、关键词、渠道、评价和候选市场证据" }
       ],
       "workflow": [
         "写出问题发生的场景、频率、后果，以及付费者、使用者和受益者。",
@@ -157,10 +156,10 @@
       "description": "Use when the user needs an interview plan, recruiting criteria, interview guide, workflow observation, notes synthesis, or evidence from real past behavior; triggers include 用户访谈、需求访谈、行为观察、招募、问题清单 and 访谈复盘.",
       "goal": "从真实过去行为和现有流程中找到问题、替代方案、约束和付费线索，而不是收集礼貌性的意见。",
       "notFor": "桌面市场研究使用 market-research；页面、预付或手工服务实验使用 demand-validation。",
-      "chapters": [6, 8],
+      "sources": [6, 8],
       "referenceRouting": [
-        { "chapters": [6], "when": "收紧招募对象、核心任务和使用场景" },
-        { "chapters": [8], "when": "设计问题、观察当前流程、记录和跨访谈归纳" }
+        { "sources": [6], "when": "收紧招募对象、核心任务和使用场景" },
+        { "sources": [8], "when": "设计问题、观察当前流程、记录和跨访谈归纳" }
       ],
       "workflow": [
         "从一个决策问题反推需要什么样的受访者和行为证据。",
@@ -179,11 +178,11 @@
       "description": "Use when the user needs to design a landing-page, waitlist, concierge, preorder, or payment experiment, or diagnose the current PMF evidence stage; triggers include 需求验证、Waitlist、预售、预付、PMF、假门测试 and 验证实验.",
       "goal": "用最短、合规、可逆的实验验证最关键风险，并把兴趣、行为、付费和留存证据分层。",
       "notFor": "只做市场桌面研究时使用 market-research；进入产品范围设计后使用 product-scope。",
-      "chapters": [5, 9, 10],
+      "sources": [5, 9, 10],
       "referenceRouting": [
-        { "chapters": [5], "when": "确认问题、付费主体和最大市场风险" },
-        { "chapters": [9], "when": "选择页面、Waitlist、手工服务、预付等实验并建立台账" },
-        { "chapters": [10], "when": "判断 PMF 证据阶段、漏斗症状和转向方向" }
+        { "sources": [5], "when": "确认问题、付费主体和最大市场风险" },
+        { "sources": [9], "when": "选择页面、Waitlist、手工服务、预付等实验并建立台账" },
+        { "sources": [10], "when": "判断 PMF 证据阶段、漏斗症状和转向方向" }
       ],
       "workflow": [
         "写出单一风险假设、目标人群、可观察行为和失败判据。",
@@ -202,11 +201,11 @@
       "description": "Use when the user must choose MVP scope, prioritize features, define the shortest value path, identify an Aha event, or diagnose product-stage friction; triggers include MVP、功能取舍、产品范围、Aha Moment、TTFV、首版 and 价值路径.",
       "goal": "让首版产品以最短但完整的路径交付一次可验证价值，并留下清楚的取舍理由。",
       "notFor": "只写定位或页面时使用 product-positioning；具体交接和验收使用 work-handoff。",
-      "chapters": [10, 11, 13, 42],
+      "sources": [10, 11, 13, 42],
       "referenceRouting": [
-        { "chapters": [10, 11], "when": "判断阶段、收紧范围并记录功能决策" },
-        { "chapters": [13], "when": "画最短价值路径、定义 Aha 和 TTFV" },
-        { "chapters": [42], "when": "把价值路径变成事件漏斗并诊断阻力" }
+        { "sources": [10, 11], "when": "判断阶段、收紧范围并记录功能决策" },
+        { "sources": [13], "when": "画最短价值路径、定义 Aha 和 TTFV" },
+        { "sources": [42], "when": "把价值路径变成事件漏斗并诊断阻力" }
       ],
       "workflow": [
         "确认一个核心用户、一次高价值任务和当前最强证据阶段。",
@@ -225,11 +224,11 @@
       "description": "Use when the user needs positioning, a value proposition, product narrative, page information architecture, landing-page copy, CTA logic, or a soft-launch page experiment; triggers include 定位、价值主张、产品叙事、Landing Page、首页文案、CTA and 转化页面.",
       "goal": "把真实用户、任务、替代方案和产品证据排成一条能支持目标行动的页面决策路径。",
       "notFor": "还没有市场和用户证据时先使用 market-research；需要视觉验收时使用 product-design。",
-      "chapters": [9, 14, 15],
+      "sources": [9, 14, 15],
       "referenceRouting": [
-        { "chapters": [14], "when": "建立定位事实表、价值主张和产品叙事" },
-        { "chapters": [15], "when": "安排页面信息、证据、CTA、表单、事件和实验" },
-        { "chapters": [9], "when": "页面承担早期需求验证或 Waitlist 实验" }
+        { "sources": [14], "when": "建立定位事实表、价值主张和产品叙事" },
+        { "sources": [15], "when": "安排页面信息、证据、CTA、表单、事件和实验" },
+        { "sources": [9], "when": "页面承担早期需求验证或 Waitlist 实验" }
       ],
       "workflow": [
         "收集核心用户、触发场景、当前替代、可证明结果和目标行动。",
@@ -248,11 +247,11 @@
       "description": "Use when the user needs UI design rules, accessibility review, localization planning, template selection, Framer or AI design workflows, responsive-state acceptance, or takeover-ready design delivery; triggers include UI、可访问性、本地化、RTL、Framer、模板、设计验收 and 设计交付.",
       "goal": "在真实内容、状态、语言和设备中完成可访问、可本地化、可维护和可接管的设计交付。",
       "notFor": "只写页面叙事和文案时使用 product-positioning。",
-      "chapters": [12, 16, 17],
+      "sources": [12, 16, 17],
       "referenceRouting": [
-        { "chapters": [16], "when": "建立层级、间距、对比、表单、响应式、可访问性和本地化规则" },
-        { "chapters": [17], "when": "选择模板、Framer、AI 工作流并做权利与接管验收" },
-        { "chapters": [12], "when": "把设计要求变成状态、示例和可验收任务" }
+        { "sources": [16], "when": "建立层级、间距、对比、表单、响应式、可访问性和本地化规则" },
+        { "sources": [17], "when": "选择模板、Framer、AI 工作流并做权利与接管验收" },
+        { "sources": [12], "when": "把设计要求变成状态、示例和可验收任务" }
       ],
       "workflow": [
         "确认用户任务、内容类型、目标语言、设备范围、平台约束和交付方式。",
@@ -271,11 +270,11 @@
       "description": "Use when the user needs pricing research, packaging, billing units, trial or freemium design, refund rules, monthly versus annual plans, LTD, usage billing, or a first-payment experiment; triggers include 定价、套餐、Trial、Freemium、退款、月付、年付、LTD and 用量计费.",
       "goal": "让价值、计费单位、套餐、首次付费路径、现金和履约义务形成一致的经营系统。",
       "notFor": "需要完整 CAC/LTV/回收期核算时使用 unit-economics。",
-      "chapters": [18, 19, 20],
+      "sources": [18, 19, 20],
       "referenceRouting": [
-        { "chapters": [18], "when": "研究价值、计费单位、价格水平和套餐结构" },
-        { "chapters": [19], "when": "选择 Trial、Freemium、付费墙、退款和首次付款路径" },
-        { "chapters": [20], "when": "设计月付、年付、LTD、用量计费和履约账户" }
+        { "sources": [18], "when": "研究价值、计费单位、价格水平和套餐结构" },
+        { "sources": [19], "when": "选择 Trial、Freemium、付费墙、退款和首次付款路径" },
+        { "sources": [20], "when": "设计月付、年付、LTD、用量计费和履约账户" }
       ],
       "workflow": [
         "确认付费者、问题强度、替代方案、价值事件、边际成本和渠道。",
@@ -294,10 +293,10 @@
       "description": "Use when the user must calculate or diagnose CAC, LTV, contribution margin, ROAS, ROI, payback, churn, cohort value, channel capacity, or scale/stop decisions; triggers include 单位经济、CAC、LTV、ROI、ROAS、回收期、Cohort and 渠道容量.",
       "goal": "用同一核算单位连接净收入、完整成本、客户价值、现金回收和渠道上限。",
       "notFor": "只设计价格和套餐时使用 pricing-strategy；缺少可靠数据时先明确口径和采集计划。",
-      "chapters": [18, 20, 21],
+      "sources": [18, 20, 21],
       "referenceRouting": [
-        { "chapters": [21], "when": "统一 CAC/LTV/ROI/回收期/渠道容量口径并形成经营表" },
-        { "chapters": [18, 20], "when": "价格、折扣、现金和履约义务影响单位经济" }
+        { "sources": [21], "when": "统一 CAC/LTV/ROI/回收期/渠道容量口径并形成经营表" },
+        { "sources": [18, 20], "when": "价格、折扣、现金和履约义务影响单位经济" }
       ],
       "workflow": [
         "固定客户、订单或账户作为核算单位，并写清时间窗、币种和含税口径。",
@@ -316,10 +315,10 @@
       "description": "Use when the user needs a product launch plan, preheat, launch package, day-of runbook, Product Hunt decision or submission, measurement, incident handling, or post-launch review; triggers include 发布、Launch、预热、Product Hunt、上线当天、发布包 and 复盘.",
       "goal": "把发布从单日曝光变成包含承接、分发、测量、反馈和长期资产的可重复系统。",
       "notFor": "App Store 审核和 ASO 使用 app-store-growth。",
-      "chapters": [22, 23],
+      "sources": [22, 23],
       "referenceRouting": [
-        { "chapters": [22], "when": "设计通用预热、发布包、运行手册、测量和复盘节奏" },
-        { "chapters": [23], "when": "判断 Product Hunt 是否适合并准备合规提交和当日执行" }
+        { "sources": [22], "when": "设计通用预热、发布包、运行手册、测量和复盘节奏" },
+        { "sources": [23], "when": "判断 Product Hunt 是否适合并准备合规提交和当日执行" }
       ],
       "workflow": [
         "确认发布对象、目标用户、唯一核心动作和业务成功标准。",
@@ -338,11 +337,11 @@
       "description": "Use when the user needs App Store submission scope, TestFlight baselines, review notes, rejection response, privacy declarations, ASO, product-page tests, ratings, or Apple Ads; triggers include App Store、审核、TestFlight、Review Notes、ASO、关键词、Apple Ads and 商店转化.",
       "goal": "让 App 从可复现审核、准确披露和清晰元数据进入持续的商店曝光—下载—价值—收入循环。",
       "notFor": "通用网页产品发布使用 product-launch。",
-      "chapters": [22, 24, 25],
+      "sources": [22, 24, 25],
       "referenceRouting": [
-        { "chapters": [24], "when": "准备构建、测试账号、Review Notes、隐私披露和拒绝处理" },
-        { "chapters": [25], "when": "研究关键词、元数据、页面测试、评分和 Apple Ads" },
-        { "chapters": [22], "when": "把商店发布接入通用发布、测量和复盘系统" }
+        { "sources": [24], "when": "准备构建、测试账号、Review Notes、隐私披露和拒绝处理" },
+        { "sources": [25], "when": "研究关键词、元数据、页面测试、评分和 Apple Ads" },
+        { "sources": [22], "when": "把商店发布接入通用发布、测量和复盘系统" }
       ],
       "workflow": [
         "确定首发必须完成、可以延后和必须删除的范围，并建立 TestFlight 可复现基线。",
@@ -361,11 +360,11 @@
       "description": "Use when evaluating or launching a template, plugin, open-source business, API product, marketplace extension, or vertical app built on another platform; triggers include 模板生意、插件、开源商业化、平台生态、API 产品、Marketplace and 垂直应用.",
       "goal": "在平台依赖、用户任务、付费主体、分发、成本和退出风险都清楚的前提下验证一个生态机会。",
       "notFor": "普通 SaaS 市场验证使用 demand-validation。",
-      "chapters": [2, 7, 9, 21, 26],
+      "sources": [2, 7, 9, 21, 26],
       "referenceRouting": [
-        { "chapters": [26], "when": "选择模板、插件、开源或垂直应用形态并运行六周验证" },
-        { "chapters": [2, 7, 9], "when": "比较经营路径、研究平台需求并设计最小验证" },
-        { "chapters": [21], "when": "核算平台抽成、支持成本、渠道容量和退出经济" }
+        { "sources": [26], "when": "选择模板、插件、开源或垂直应用形态并运行六周验证" },
+        { "sources": [2, 7, 9], "when": "比较经营路径、研究平台需求并设计最小验证" },
+        { "sources": [21], "when": "核算平台抽成、支持成本、渠道容量和退出经济" }
       ],
       "workflow": [
         "从平台内真实任务、使用者和付费主体出发，记录当前替代方案。",
@@ -384,11 +383,11 @@
       "description": "Use when content must become a reusable operating asset with source tracking, rights, disclosure boundaries, repurposing, multi-account governance, creator briefs, metrics, maintenance, and delegation; triggers include 内容系统、素材库、Build in Public、内容复用、多账号、内容治理 and 创作者协作.",
       "goal": "把材料、内容、发布和产品信号连接成有来源、有权利边界、可复用、可维护的经营系统。",
       "notFor": "只运行 X、YouTube 或 SEO 的具体增长流程时，使用相应渠道技能。",
-      "chapters": [27, 28, 31],
+      "sources": [27, 28, 31],
       "referenceRouting": [
-        { "chapters": [27], "when": "建立材料库、内容对象、经营任务、证据链和维护规则" },
-        { "chapters": [28], "when": "设计 Build in Public 身份、披露等级、商业秘密和安全边界" },
-        { "chapters": [31], "when": "进行跨平台复用、多账号治理、创作者 Brief、权限和收权" }
+        { "sources": [27], "when": "建立材料库、内容对象、经营任务、证据链和维护规则" },
+        { "sources": [28], "when": "设计 Build in Public 身份、披露等级、商业秘密和安全边界" },
+        { "sources": [31], "when": "进行跨平台复用、多账号治理、创作者 Brief、权限和收权" }
       ],
       "workflow": [
         "清点原始材料、来源、权利、目标受众和可公开等级。",
@@ -407,11 +406,11 @@
       "description": "Use when the user needs X/Twitter market fit, profile positioning, cold start, relationship maps, reply practice, topic selection, post structures, source-backed content, calendars, or product-linked review; triggers include X、Twitter、推特、Profile、冷启动、推文、Thread and 内容日历.",
       "goal": "在目标用户确实存在于 X 的前提下，用身份、关系、内容和产品反馈形成可持续增长循环。",
       "notFor": "跨平台材料和权限治理使用 content-system。",
-      "chapters": [27, 29, 30, 31],
+      "sources": [27, 29, 30, 31],
       "referenceRouting": [
-        { "chapters": [29], "when": "判断渠道匹配、设计 Profile、关系图和两周冷启动" },
-        { "chapters": [30], "when": "建立选题、素材、结构、日历和复盘系统" },
-        { "chapters": [27, 31], "when": "连接内容资产、来源、复用、账号和协作治理" }
+        { "sources": [29], "when": "判断渠道匹配、设计 Profile、关系图和两周冷启动" },
+        { "sources": [30], "when": "建立选题、素材、结构、日历和复盘系统" },
+        { "sources": [27, 31], "when": "连接内容资产、来源、复用、账号和协作治理" }
       ],
       "workflow": [
         "确认目标用户、语言、讨论场景和 X 对当前业务的具体任务。",
@@ -430,10 +429,10 @@
       "description": "Use when the user needs a YouTube channel model, low-production topic system, search-versus-browse strategy, repeatable demo path, title/thumbnail logic, retention diagnosis, product attribution, or a four-week publishing loop; triggers include YouTube、频道定位、选题、缩略图、留存、搜索流量 and 低制作成本.",
       "goal": "围绕一个稳定受众任务建立制作负担可控、可诊断并能连接产品结果的视频系统。",
       "notFor": "通用素材库、权利和跨平台治理使用 content-system。",
-      "chapters": [27, 31, 32],
+      "sources": [27, 31, 32],
       "referenceRouting": [
-        { "chapters": [32], "when": "选择频道模型、题目、演示路径、包装、留存和四周节奏" },
-        { "chapters": [27, 31], "when": "处理来源、复用、权利、协作和产品归因" }
+        { "sources": [32], "when": "选择频道模型、题目、演示路径、包装、留存和四周节奏" },
+        { "sources": [27, 31], "when": "处理来源、复用、权利、协作和产品归因" }
       ],
       "workflow": [
         "确认目标受众、重复任务、搜索与推荐入口，以及频道承担的业务结果。",
@@ -452,11 +451,11 @@
       "description": "Use when the user needs keyword-to-page mapping, SEO architecture, technical SEO, linkable assets, free tools, programmatic SEO, authority building, or AI-search citation visibility; triggers include SEO、关键词、页面地图、外链、免费工具、Programmatic SEO、GEO and AI 搜索.",
       "goal": "把真实查询意图转成可抓取、可理解、可引用、可维护并能连接业务结果的公开资产。",
       "notFor": "仅做付费搜索广告时使用 paid-acquisition。",
-      "chapters": [7, 27, 33, 34],
+      "sources": [7, 27, 33, 34],
       "referenceRouting": [
-        { "chapters": [33], "when": "完成查询意图、页面地图、站内结构、技术检查和测量" },
-        { "chapters": [34], "when": "设计外链资产、免费工具、程序化页面和 AI 搜索可见性" },
-        { "chapters": [7, 27], "when": "补充竞品/关键词证据和内容资产治理" }
+        { "sources": [33], "when": "完成查询意图、页面地图、站内结构、技术检查和测量" },
+        { "sources": [34], "when": "设计外链资产、免费工具、程序化页面和 AI 搜索可见性" },
+        { "sources": [7, 27], "when": "补充竞品/关键词证据和内容资产治理" }
       ],
       "workflow": [
         "确认业务对象、目标用户、查询任务、目标地区和可维护资源。",
@@ -475,11 +474,11 @@
       "description": "Use when the user must compare growth channels, select one channel for the current stage, define Product-Channel Fit, or run a low-cost 30-day learning loop; triggers include 渠道选择、Product-Channel Fit、获客渠道、30 天实验、低成本增长 and 渠道优先级.",
       "goal": "根据用户行为、产品形态、单位经济和团队能力选择一个可学习的主渠道，而不是同时铺开。",
       "notFor": "已经选定广告、创作者、社区、销售或伙伴渠道时，使用对应执行技能。",
-      "chapters": [10, 21, 35],
+      "sources": [10, 21, 35],
       "referenceRouting": [
-        { "chapters": [35], "when": "比较渠道匹配并设计 30 天低成本学习循环" },
-        { "chapters": [21], "when": "核算渠道成本、回收期和容量" },
-        { "chapters": [10], "when": "确认产品证据阶段是否支持当前渠道" }
+        { "sources": [35], "when": "比较渠道匹配并设计 30 天低成本学习循环" },
+        { "sources": [21], "when": "核算渠道成本、回收期和容量" },
+        { "sources": [10], "when": "确认产品证据阶段是否支持当前渠道" }
       ],
       "workflow": [
         "确认 PMF 证据阶段、目标用户行为、可用资产、现金和团队能力。",
@@ -498,11 +497,11 @@
       "description": "Use when the user needs paid-acquisition readiness, assets, tracking, metric definitions, budget sizing, experiment briefs, or Meta and Google Ads funnel diagnosis; triggers include 付费获客、广告投放、Meta Ads、Google Ads、预算、归因、漏斗 and Campaign.",
       "goal": "用完整路径、可靠口径和可承受预算判断广告问题发生在哪一层，并只在单位经济允许时放量。",
       "notFor": "还没完成渠道选择或产品证据不足时先使用 channel-fit。",
-      "chapters": [21, 35, 36, 37],
+      "sources": [21, 35, 36, 37],
       "referenceRouting": [
-        { "chapters": [36], "when": "检查投放资产、数据、指标、预算和实验 Brief" },
-        { "chapters": [37], "when": "分别诊断 Meta 与 Google Search 的漏斗损失" },
-        { "chapters": [21, 35], "when": "核算单位经济、渠道容量和阶段匹配" }
+        { "sources": [36], "when": "检查投放资产、数据、指标、预算和实验 Brief" },
+        { "sources": [37], "when": "分别诊断 Meta 与 Google Search 的漏斗损失" },
+        { "sources": [21, 35], "when": "核算单位经济、渠道容量和阶段匹配" }
       ],
       "workflow": [
         "检查价值主张、页面、转化事件、归因、数据质量和后端承接是否可用。",
@@ -521,11 +520,11 @@
       "description": "Use when the user needs creator selection, outreach, briefs, rates, rights, disclosure, tracking, fraud review, attribution, amplification, agency decisions, or a creator campaign ledger; triggers include 红人营销、创作者营销、KOL、达人、Brief、报价、授权、归因 and Agency.",
       "goal": "把创作者合作从单条内容采购变成有选择逻辑、创意边界、权利、归因和经营复盘的项目。",
       "notFor": "自有内容系统使用 content-system；Affiliate 计划使用 partner-programs。",
-      "chapters": [21, 31, 35, 38],
+      "sources": [21, 31, 35, 38],
       "referenceRouting": [
-        { "chapters": [38], "when": "完成选号、外联、Brief、披露、权利、追踪、台账和放大" },
-        { "chapters": [31], "when": "处理创作者协作、多账号、审核、权限和收权" },
-        { "chapters": [21, 35], "when": "核算完整成本、增量、渠道容量和实验阶段" }
+        { "sources": [38], "when": "完成选号、外联、Brief、披露、权利、追踪、台账和放大" },
+        { "sources": [31], "when": "处理创作者协作、多账号、审核、权限和收权" },
+        { "sources": [21, 35], "when": "核算完整成本、增量、渠道容量和实验阶段" }
       ],
       "workflow": [
         "定义目标用户、内容任务、业务结果、可接受成本和权利需求。",
@@ -544,11 +543,11 @@
       "description": "Use when the user needs a community or Discord to handle support, feedback, onboarding, member paths, moderation, events, knowledge, AI support, permissions, or retention; triggers include 社区、Discord、成员路径、版规、Moderator、活动、用户反馈 and 社区留存.",
       "goal": "让社区承担明确的支持、反馈、关系和留存任务，而不是只追求成员数量和消息量。",
       "notFor": "跨平台内容发布使用 content-system；一对一销售使用 outbound-sales。",
-      "chapters": [27, 39, 42, 43],
+      "sources": [27, 39, 42, 43],
       "referenceRouting": [
-        { "chapters": [39], "when": "设计成员路径、频道、角色、支持、活动、Moderation 和四周落地" },
-        { "chapters": [42, 43], "when": "连接 Onboarding、支持、留存、退款和关系质量" },
-        { "chapters": [27], "when": "把社区知识和反馈转成有权限边界的内容资产" }
+        { "sources": [39], "when": "设计成员路径、频道、角色、支持、活动、Moderation 和四周落地" },
+        { "sources": [42, 43], "when": "连接 Onboarding、支持、留存、退款和关系质量" },
+        { "sources": [27], "when": "把社区知识和反馈转成有权限边界的内容资产" }
       ],
       "workflow": [
         "定义社区服务对象、核心任务、成员类型和与产品的关系。",
@@ -567,11 +566,11 @@
       "description": "Use when the user needs a searchable ICP, lead research, compliant outreach, cold-email copy, sequences, qualification, discovery, demos, pipeline stages, or weekly sales diagnosis; triggers include Cold Email、冷邮件、外联、销售、Pipeline、线索、Demo and ICP 名单.",
       "goal": "从可搜索 ICP 到真实商业结果建立合规、低压力、可诊断的早期销售链路。",
       "notFor": "大规模广告获客使用 paid-acquisition；伙伴分销使用 partner-programs。",
-      "chapters": [6, 21, 35, 40],
+      "sources": [6, 21, 35, 40],
       "referenceRouting": [
-        { "chapters": [40], "when": "建立 ICP 搜索、名单研究、合规发送、邮件、Pipeline 和复盘" },
-        { "chapters": [6], "when": "收紧用户、任务、触发场景和可搜索条件" },
-        { "chapters": [21, 35], "when": "核算完整销售成本并判断渠道匹配" }
+        { "sources": [40], "when": "建立 ICP 搜索、名单研究、合规发送、邮件、Pipeline 和复盘" },
+        { "sources": [6], "when": "收紧用户、任务、触发场景和可搜索条件" },
+        { "sources": [21, 35], "when": "核算完整销售成本并判断渠道匹配" }
       ],
       "workflow": [
         "定义可搜索 ICP、触发事件、当前流程、问题强度和不应联系的对象。",
@@ -590,11 +589,11 @@
       "description": "Use when the user needs an affiliate, referral, reseller, agency, integration, or partner program with incentives, discounts, attribution, fraud controls, terms, payout operations, or exit rules; triggers include Affiliate、Referral、推荐奖励、合作伙伴、分销、佣金、折扣 and 归因.",
       "goal": "让激励、单位经济、真实增量、权利义务、支付和退出规则共同成立。",
       "notFor": "一次性创作者内容合作使用 creator-marketing。",
-      "chapters": [18, 21, 35, 41],
+      "sources": [18, 21, 35, 41],
       "referenceRouting": [
-        { "chapters": [41], "when": "选择关系类型、激励、折扣、归因、条款、支付和退出" },
-        { "chapters": [18, 21], "when": "核算价格、毛利、佣金、欺诈和回收期" },
-        { "chapters": [35], "when": "确认伙伴渠道与产品和阶段匹配" }
+        { "sources": [41], "when": "选择关系类型、激励、折扣、归因、条款、支付和退出" },
+        { "sources": [18, 21], "when": "核算价格、毛利、佣金、欺诈和回收期" },
+        { "sources": [35], "when": "确认伙伴渠道与产品和阶段匹配" }
       ],
       "workflow": [
         "定义伙伴带来的具体价值、目标客户、增量行为和不可接受风险。",
@@ -613,11 +612,11 @@
       "description": "Use when the user needs Aha and funnel diagnostics, onboarding experiments, lifecycle email, support, churn prevention, refunds, cancellations, chargebacks, payment risk, or a weekly operating cadence; triggers include Onboarding、Aha、激活、留存、邮件、客服、退款、Chargeback、支付风控 and 流失.",
       "goal": "把首次价值、持续价值、沟通、支持、退款和支付风险接成可测量且可恢复的用户状态系统。",
       "notFor": "只定义 MVP 价值路径时使用 product-scope。",
-      "chapters": [13, 19, 21, 42, 43],
+      "sources": [13, 19, 21, 42, 43],
       "referenceRouting": [
-        { "chapters": [42], "when": "定义价值事件、完整漏斗、分群、数据质量和每周诊断" },
-        { "chapters": [43], "when": "建立用户状态、生命周期邮件、支持、退款、争议和支付风控" },
-        { "chapters": [13, 19, 21], "when": "补充价值路径、首次付费、净收入和单位经济" }
+        { "sources": [42], "when": "定义价值事件、完整漏斗、分群、数据质量和每周诊断" },
+        { "sources": [43], "when": "建立用户状态、生命周期邮件、支持、退款、争议和支付风控" },
+        { "sources": [13, 19, 21], "when": "补充价值路径、首次付费、净收入和单位经济" }
       ],
       "workflow": [
         "定义用户状态、首次价值事件、持续价值事件和完整事件口径。",
@@ -636,11 +635,11 @@
       "description": "Use when the user needs cross-border ecommerce product selection, landed-cost math, storefront conversion, fulfillment, returns, support, payment risk, repeat purchase, or a four-week validation; triggers include 跨境电商、选品、Shopify、独立站、履约、物流、退货、复购 and 毛利.",
       "goal": "把选品、获客、页面、支付、履约、售后和复购放进同一条净收入与现金链路。",
       "notFor": "纯软件产品定价使用 pricing-strategy；公司注册和税务使用 company-setup。",
-      "chapters": [18, 20, 21, 43, 44],
+      "sources": [18, 20, 21, 43, 44],
       "referenceRouting": [
-        { "chapters": [44], "when": "设计选品、完整成本、页面、履约、退货、复购和四周验证" },
-        { "chapters": [18, 20, 21], "when": "核算定价、现金、义务、毛利、CAC 和渠道" },
-        { "chapters": [43], "when": "处理支持、退款、支付争议和风控" }
+        { "sources": [44], "when": "设计选品、完整成本、页面、履约、退货、复购和四周验证" },
+        { "sources": [18, 20, 21], "when": "核算定价、现金、义务、毛利、CAC 和渠道" },
+        { "sources": [43], "when": "处理支持、退款、支付争议和风控" }
       ],
       "workflow": [
         "从最大潜在损失反推选品，确认需求、差异、限制和供应稳定性。",
@@ -659,11 +658,11 @@
       "description": "Use when the user needs to decide whether or where to form a company, compare entities or jurisdictions, design banking and payment chains, build tax calendars, handle cross-border funds, team classification, or closure obligations; triggers include 注册公司、主体、美国公司、收款、银行、税务日历、VAT、跨境资金 and 团队安排.",
       "goal": "从真实业务触发条件出发选择可运营的主体和收款链路，并把持续义务做成有负责人和证据的日历。",
       "notFor": "本技能不是法律或税务意见；涉及实际设立、申报和跨境安排时必须由目标法域专业人士确认。",
-      "chapters": [3, 20, 45, 46],
+      "sources": [3, 20, 45, 46],
       "referenceRouting": [
-        { "chapters": [45], "when": "判断设立时机、选择主体/法域并设计合同、银行和支付链" },
-        { "chapters": [46], "when": "建立治理、所得税、州税、VAT/GST、工资、股东和跨境义务日历" },
-        { "chapters": [3, 20], "when": "记录依据、核验时效信息并连接现金与履约义务" }
+        { "sources": [45], "when": "判断设立时机、选择主体/法域并设计合同、银行和支付链" },
+        { "sources": [46], "when": "建立治理、所得税、州税、VAT/GST、工资、股东和跨境义务日历" },
+        { "sources": [3, 20], "when": "记录依据、核验时效信息并连接现金与履约义务" }
       ],
       "workflow": [
         "收集创始人居住地、客户、团队、产品、资金流、平台和未来计划等事实。",
@@ -682,12 +681,12 @@
       "description": "Use when the user needs a data map, privacy operations, GDPR roles, cookies, vendor contracts, incident response, platform-policy review, IP ownership, security controls, contractor access, or phased compliance; triggers include 隐私、GDPR、Cookie、数据地图、平台政策、知识产权、合同、安全、合规 and 风险台账.",
       "goal": "把抽象合规要求转换成与真实数据流、平台、内容、合作方和发布阶段相匹配的可复核经营控制。",
       "notFor": "本技能不是法律意见；法律结论、合同定稿、监管申报和安全认证必须由相应专业人士确认。",
-      "chapters": [1, 17, 27, 28, 31, 38, 45, 47, 48],
+      "sources": [1, 17, 27, 28, 31, 38, 45, 47, 48],
       "referenceRouting": [
-        { "chapters": [47], "when": "处理数据地图、角色、法律基础、Cookie、供应商、合同和事件响应" },
-        { "chapters": [48], "when": "审查平台政策、知识产权、账号、安全和分阶段合规" },
-        { "chapters": [1, 17, 45], "when": "处理外包责任、设计/AI 权利、主体和合同承接" },
-        { "chapters": [27, 28, 31, 38], "when": "处理内容来源、公开披露、账号治理、创作者权利和广告披露" }
+        { "sources": [47], "when": "处理数据地图、角色、法律基础、Cookie、供应商、合同和事件响应" },
+        { "sources": [48], "when": "审查平台政策、知识产权、账号、安全和分阶段合规" },
+        { "sources": [1, 17, 45], "when": "处理外包责任、设计/AI 权利、主体和合同承接" },
+        { "sources": [27, 28, 31, 38], "when": "处理内容来源、公开披露、账号治理、创作者权利和广告披露" }
       ],
       "workflow": [
         "从一个真实用户流程画数据、平台、内容、账号、供应商和资金事实地图。",

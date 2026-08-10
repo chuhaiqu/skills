@@ -13,8 +13,8 @@ description: "Use when the user needs to decide the next highest-leverage action
 
 ## 开始前
 
-1. 先读 [来源索引](references/INDEX.md)，确认本技能使用的 Playbook 章节和来源快照。
-2. 根据下面的“参考资料路由”只加载当前任务需要的章节，不要默认一次读完全部参考资料。
+1. 先读 [来源索引](references/INDEX.md)，确认本技能使用的经验资料和内容快照。
+2. 根据下面的“参考资料路由”只加载当前任务需要的资料，不要默认一次读完全部参考资料。
 3. 收集当前业务阶段、目标用户或对象、已有证据、时间和预算、不可改变的约束，以及用户希望得到的最终交付物。
 4. 缺少信息时，先用已有材料推进；只有会实质改变方向的缺口才向用户提问，并明确暂用的假设。
 
@@ -28,10 +28,10 @@ description: "Use when the user needs to decide the next highest-leverage action
 
 ## 参考资料路由
 
-- [02 选择一条适合自己的经营路径](references/playbook-02.md)、[03 用证据做判断：来源、AI、计划与复盘](references/playbook-03.md)：经营方向不清、候选路径过多或证据不足。
-- [10 PMF 的证据阶段与调整方向](references/playbook-10.md)、[13 MVP、最短价值路径与 Aha Moment](references/playbook-13.md)、[42 Onboarding、Aha Moment 与漏斗诊断](references/playbook-42.md)：卡点可能在 PMF、价值路径、激活或留存。
-- [21 单位经济：CAC、LTV、ROI、回收期与渠道容量](references/playbook-21.md)、[35 Product–Channel Fit 与 30 天低成本学习循环](references/playbook-35.md)：需要比较渠道效率、容量和下一轮实验。
-- [45 什么时候注册公司，怎样选择主体和收款链路](references/playbook-45.md)、[48 平台政策、知识产权、安全与分阶段合规](references/playbook-48.md)：下一步可能被主体、平台政策或合规前置条件阻断。
+- [02 选择一条适合自己的经营路径](references/source-02.md)、[03 用证据做判断：来源、AI、计划与复盘](references/source-03.md)：经营方向不清、候选路径过多或证据不足。
+- [10 PMF 的证据阶段与调整方向](references/source-10.md)、[13 MVP、最短价值路径与 Aha Moment](references/source-13.md)、[42 Onboarding、Aha Moment 与漏斗诊断](references/source-42.md)：卡点可能在 PMF、价值路径、激活或留存。
+- [21 单位经济：CAC、LTV、ROI、回收期与渠道容量](references/source-21.md)、[35 Product–Channel Fit 与 30 天低成本学习循环](references/source-35.md)：需要比较渠道效率、容量和下一轮实验。
+- [45 什么时候注册公司，怎样选择主体和收款链路](references/source-45.md)、[48 平台政策、知识产权、安全与分阶段合规](references/source-48.md)：下一步可能被主体、平台政策或合规前置条件阻断。
 
 ## 必须交付
 
@@ -45,8 +45,8 @@ description: "Use when the user needs to decide the next highest-leverage action
 ## 质量与证据边界
 
 - 把已验证事实、用户提供的信息、解释、假设和待核验项明确分开。
-- 不发明案例、来源、数字、法律结论、平台规则或用户证据；Playbook 没有答案时直接说明。
+- 不发明案例、来源、数字、法律结论、平台规则或用户证据；现有资料没有答案时直接说明。
 - 对价格、法律、税务、平台政策、产品字段和市场规则等会变化的信息，使用当前权威一手来源核验，并记录核验日期。
-- 不在回答中大段复现参考章节。把方法应用到用户的具体情境，生成新的工作成果。
+- 不在回答中大段复现参考资料。把方法应用到用户的具体情境，生成新的工作成果。
 - 保留必要的风险、权利、隐私、披露和停止条件；不要为了显得确定而删除边界。
 - 默认使用用户的语言。中文交付应直接、具体、可复制，避免空泛的策略词。

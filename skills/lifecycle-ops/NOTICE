@@ -1,17 +1,20 @@
-Chuhaiqu Playbook Skill: 优化 Onboarding、留存与支付运营 (lifecycle-ops)
+出海去孵化器 Skill: 优化 Onboarding、留存与支付运营 (lifecycle-ops)
+Chuhaiqu Incubator Skill
 Copyright 2026 Velocity1, LLC
 
-This Skill is based on the Chuhaiqu Playbook by 出海去 (Chuhaiqu):
-https://chuhaiqu.club/playbook
+This Agent Skill is developed from the accumulated experience and practice of
+出海去孵化器 (Chuhaiqu Incubator), a community incubator for one-person
+companies and global growth:
+https://chuhaiqu.club/
 
 Licensed under the Apache License, Version 2.0. Redistributions must retain
 this NOTICE and the original copyright and attribution notices. Modified
 files must carry prominent notices stating that they were changed.
 
 A clear attribution for redistributed or adapted versions is:
-"Based on the Chuhaiqu Playbook Skills by 出海去 (Chuhaiqu),
+"Based on 出海去孵化器 Skills (Chuhaiqu Incubator Skills),
 Copyright 2026 Velocity1, LLC."
 
-Third-party materials identified in Playbook citations remain subject to
-their respective rights and terms. The License applies only to material
-that Velocity1, LLC is authorized to license.
+Third-party materials identified in source citations remain subject to their
+respective rights and terms. The License applies only to material that
+Velocity1, LLC is authorized to license.

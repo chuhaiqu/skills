@@ -1,10 +1,8 @@
 {
-  "sourceRepository": "https://github.com/chuhaiqu/playbook",
-  "sourceWebsite": "https://chuhaiqu.club/playbook",
-  "sourceCommit": "b95aebe7f3087ec9d4fb4c6c85a95e34a4c97070",
+  "sourceCommit": "305a8e066e122a89501a3fbee17f668ac44e799f",
   "corpusSha256": "b75640f5e76dcce5f5870f1caf54ac01cdae0f510e561e32a0f4ce062c7606c3",
-  "chapterCount": 48,
-  "chapters": [
+  "documentCount": 48,
+  "documents": [
     {
       "number": 1,
       "file": "01-一人公司不等于一个人做完所有事.md",

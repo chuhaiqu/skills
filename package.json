@@ -1,9 +1,9 @@
 {
   "private": true,
-  "description": "Installable Agent Skills derived from the Chuhaiqu Playbook",
+  "description": "Agent Skills from 出海去孵化器 for one-person companies and global growth",
   "scripts": {
     "scaffold": "node scripts/scaffold-skills.mjs",
-    "sync": "node scripts/sync-playbook.mjs",
+    "sync": "node scripts/sync-content.mjs",
     "validate": "node scripts/validate-repo.mjs"
   }
 }

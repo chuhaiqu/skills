@@ -17,12 +17,12 @@ function check(condition, message) {
 
 check(map.skills.length === 30, `Expected 30 skills, found ${map.skills.length}.`);
 check(expectedNames.size === map.skills.length, "Skill names are not unique.");
-check(lock.chapterCount === 48 && lock.chapters.length === 48, "Source lock must contain 48 chapters.");
+check(lock.documentCount === 48 && lock.documents.length === 48, "Source lock must contain the complete canonical document set.");
 
-const coverage = new Set(map.skills.flatMap((skill) => skill.chapters));
-check(coverage.size === 48, `Expected all 48 chapters to be covered, found ${coverage.size}.`);
+const coverage = new Set(map.skills.flatMap((skill) => skill.sources));
+check(coverage.size === 48, `Expected the complete canonical document set to be covered, found ${coverage.size}.`);
 for (let number = 1; number <= 48; number += 1) {
-  check(coverage.has(number), `Chapter ${number} is not covered by any skill.`);
+  check(coverage.has(number), `Source document ${number} is not covered by any skill.`);
 }
 
 const actualSkillDirs = readdirSync(join(root, "skills"), { withFileTypes: true })
@@ -66,24 +66,24 @@ for (const skill of map.skills) {
   if (existsSync(notice)) {
     const noticeText = readFileSync(notice, "utf8");
     check(noticeText.includes(`(${skill.name})`), `${skill.name}: NOTICE must identify the installed skill.`);
-    check(noticeText.includes("出海去 (Chuhaiqu)"), `${skill.name}: NOTICE must retain Chuhaiqu attribution.`);
+    check(noticeText.includes("出海去孵化器"), `${skill.name}: NOTICE must retain Chuhaiqu Incubator attribution.`);
     check(noticeText.includes("Modified"), `${skill.name}: NOTICE must mention modification notices.`);
   }
   if (existsSync(license)) {
     check(readFileSync(license, "utf8").includes("Apache License\n                           Version 2.0"), `${skill.name}: unexpected license.`);
   }
 
-  const expectedRefs = new Set(skill.chapters.map((number) => `playbook-${String(number).padStart(2, "0")}.md`));
-  const actualRefs = readdirSync(join(dir, "references")).filter((file) => /^playbook-\d{2}\.md$/.test(file));
-  check(actualRefs.length === expectedRefs.size, `${skill.name}: wrong number of chapter references.`);
+  const expectedRefs = new Set(skill.sources.map((number) => `source-${String(number).padStart(2, "0")}.md`));
+  const actualRefs = readdirSync(join(dir, "references")).filter((file) => /^source-\d{2}\.md$/.test(file));
+  check(actualRefs.length === expectedRefs.size, `${skill.name}: wrong number of source references.`);
   for (const file of actualRefs) check(expectedRefs.has(file), `${skill.name}: unexpected reference ${file}.`);
-  for (const number of skill.chapters) {
-    const file = `playbook-${String(number).padStart(2, "0")}.md`;
+  for (const number of skill.sources) {
+    const file = `source-${String(number).padStart(2, "0")}.md`;
     const refPath = join(dir, "references", file);
     check(existsSync(refPath), `${skill.name}: missing ${file}.`);
     if (existsSync(refPath)) {
       const sha256 = createHash("sha256").update(readFileSync(refPath)).digest("hex");
-      check(sha256 === lock.chapters[number - 1].sha256, `${skill.name}: ${file} differs from source lock.`);
+      check(sha256 === lock.documents[number - 1].sha256, `${skill.name}: ${file} differs from source lock.`);
     }
   }
 }
@@ -123,4 +123,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Validated ${map.skills.length} skills, 48/48 chapter coverage, ${files.length} files, ${totalBytes} bytes.`);
+console.log(`Validated ${map.skills.length} skills, complete source coverage, ${files.length} files, ${totalBytes} bytes.`);

@@ -1,6 +1,8 @@
-# 出海去 Playbook Skills
+# 出海去孵化器 Skills
 
-把出海去 Playbook 转换成可被 Codex、Claude Code 等 Agent 安装的 Skill Set。仓库包含 30 个可独立选择的 Skill：1 个诊断路由器和 29 个执行技能。模块按用户要完成的工作划分，不按 48 章机械拆分。
+面向「一人公司」和出海独立产品的 Agent Skills，覆盖经营判断、市场验证、产品、定价、发布、全球增长、持续运营与合规。
+
+这些 Skills 来自出海去孵化器过去几年的社区实践、嘉宾分享、实战课程和持续沉淀的经验，帮助 Codex、Claude Code 等 Agent 直接完成具体工作。
 
 ## 安装
 
@@ -28,7 +30,7 @@ npx skills add chuhaiqu/skill --skill demand-validation
 npx skills add chuhaiqu/skill --skill '*' -a codex -a claude-code -g -y
 ```
 
-本仓库公开发布，任何人都可以安装、使用、修改和再分发，但必须遵守下面的署名和变更说明要求。
+本仓库仍在整理，暂未公开。获得仓库访问权限的测试用户可以安装使用。
 
 完整模块见 [CATALOG.md](./CATALOG.md)。
 
@@ -41,29 +43,29 @@ skills/
     agents/openai.yaml
     references/
       INDEX.md
-      playbook-XX.md
+      source-XX.md
 ```
 
-每个 Skill 都是自包含目录。安装单个 Skill 时，不依赖仓库根目录或其他 Skill 的共享文件。参考章节保留公开 Playbook 原文和来源，`SKILL.md` 只承载可执行工作流、触发边界和交付标准。
+每个 Skill 都是自包含目录。安装单个 Skill 时，不依赖仓库根目录或其他 Skill 的共享文件。`SKILL.md` 承载可执行工作流、触发边界和交付标准，`references/` 提供完成任务所需的经验资料。
 
-## 来源同步与验证
+## 维护与验证
 
-维护者从 Playbook 公共章节源同步：
+维护者从内容仓库同步：
 
 ```bash
 npm run scaffold
-npm run sync -- --source /path/to/chuhaiqu-playbook
+npm run sync -- --source /path/to/canonical-content-directory
 npm run validate
 ```
 
-`source-lock.json` 记录源提交、48 个章节的文件哈希和整个语料快照。验证脚本检查：
+`source-lock.json` 记录内容快照和文件哈希。验证脚本检查：
 
 - 30 个 Skill 均符合目录和元数据约定；
-- 48 章全部被至少一个能力模块覆盖；
-- 每个 Skill 引用自包含且与来源哈希一致；
+- 所有维护中的经验资料均被对应能力覆盖；
+- 每个 Skill 自包含且与内容快照一致；
 - 不含私有导入路径、本机绝对路径或符号链接；
 - 仓库负载保持在安装工具的安全范围内。
 
 ## 使用许可
 
-本仓库采用 [Apache License 2.0](./LICENSE)，允许使用、修改和再分发。再分发时必须保留 [NOTICE](./NOTICE)、原始版权与署名；修改过的文件必须明确标注已经修改。推荐署名为：`Based on the Chuhaiqu Playbook Skills by 出海去 (Chuhaiqu), Copyright 2026 Velocity1, LLC.`
+本仓库采用 [Apache License 2.0](./LICENSE)，允许使用、修改和再分发。再分发时必须保留 [NOTICE](./NOTICE)、原始版权与署名；修改过的文件必须明确标注已经修改。推荐署名为：`Based on 出海去孵化器 Skills (Chuhaiqu Incubator Skills), Copyright 2026 Velocity1, LLC.`

@@ -36,9 +36,13 @@ for (const skill of map.skills) {
   const skillMd = join(dir, "SKILL.md");
   const openaiYaml = join(dir, "agents", "openai.yaml");
   const indexMd = join(dir, "references", "INDEX.md");
+  const license = join(dir, "LICENSE");
+  const notice = join(dir, "NOTICE");
   check(existsSync(skillMd), `${skill.name}: missing SKILL.md.`);
   check(existsSync(openaiYaml), `${skill.name}: missing agents/openai.yaml.`);
   check(existsSync(indexMd), `${skill.name}: missing references/INDEX.md.`);
+  check(existsSync(license), `${skill.name}: missing LICENSE.`);
+  check(existsSync(notice), `${skill.name}: missing NOTICE.`);
   if (!existsSync(skillMd)) continue;
 
   const body = readFileSync(skillMd, "utf8");
@@ -58,6 +62,16 @@ for (const skill of map.skills) {
   check(yaml.includes(`short_description: \"${skill.shortDescription}\"`), `${skill.name}: short_description mismatch.`);
   check(yaml.includes(`$${skill.name}`), `${skill.name}: default_prompt must mention the skill explicitly.`);
   check(skill.shortDescription.length >= 25 && skill.shortDescription.length <= 64, `${skill.name}: shortDescription must be 25-64 chars.`);
+
+  if (existsSync(notice)) {
+    const noticeText = readFileSync(notice, "utf8");
+    check(noticeText.includes(`(${skill.name})`), `${skill.name}: NOTICE must identify the installed skill.`);
+    check(noticeText.includes("出海去 (Chuhaiqu)"), `${skill.name}: NOTICE must retain Chuhaiqu attribution.`);
+    check(noticeText.includes("Modified"), `${skill.name}: NOTICE must mention modification notices.`);
+  }
+  if (existsSync(license)) {
+    check(readFileSync(license, "utf8").includes("Apache License\n                           Version 2.0"), `${skill.name}: unexpected license.`);
+  }
 
   const expectedRefs = new Set(skill.chapters.map((number) => `playbook-${String(number).padStart(2, "0")}.md`));
   const actualRefs = readdirSync(join(dir, "references")).filter((file) => /^playbook-\d{2}\.md$/.test(file));
@@ -99,8 +113,8 @@ for (const file of files) {
   }
 }
 check(totalBytes < 25 * 1024 * 1024, `Repository payload is ${totalBytes} bytes; keep it below 25 MB.`);
-check(readFileSync(join(root, "LICENSE.md"), "utf8").startsWith("# PolyForm Internal Use License 1.0.0"), "Unexpected license text.");
-check(existsSync(join(root, "NOTICE.md")), "Missing NOTICE.md.");
+check(readFileSync(join(root, "LICENSE"), "utf8").includes("Apache License\n                           Version 2.0"), "Unexpected license text.");
+check(existsSync(join(root, "NOTICE")), "Missing NOTICE.");
 check(existsSync(join(root, "CATALOG.md")), "Missing CATALOG.md.");
 
 if (errors.length) {

@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计定价、计费与首次付费"
+  short_description: "Design pricing, packaging, billing, and trials"
+  default_prompt: "Use $pricing-strategy to help me complete this task with a source-grounded, actionable deliverable."

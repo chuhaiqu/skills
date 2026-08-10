@@ -1,0 +1,4 @@
+interface:
+  display_name: "建立内容经营系统"
+  short_description: "Build a governed content operating system"
+  default_prompt: "Use $content-system to help me complete this task with a source-grounded, actionable deliverable."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "建立低负担 YouTube 增长系统"
+  short_description: "Build a low-production YouTube growth system"
+  default_prompt: "Use $youtube-growth to help me complete this task with a source-grounded, actionable deliverable."

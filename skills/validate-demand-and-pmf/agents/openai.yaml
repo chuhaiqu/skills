@@ -1,4 +1,0 @@
-interface:
-  display_name: "验证需求与 PMF"
-  short_description: "Validate demand, payment signals, and PMF stage"
-  default_prompt: "Use $validate-demand-and-pmf to help me complete this task with a source-grounded, actionable deliverable."

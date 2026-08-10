@@ -1,4 +1,0 @@
-interface:
-  display_name: "用证据做经营决策"
-  short_description: "Make traceable evidence-based business decisions"
-  default_prompt: "Use $make-evidence-based-decisions to help me complete this task with a source-grounded, actionable deliverable."

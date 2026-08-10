@@ -81,6 +81,36 @@ function yamlString(value) {
   return JSON.stringify(value);
 }
 
+function renderAgentYaml(skill) {
+  const defaultPrompt = `Use $${skill.name} to help me complete this task with a source-grounded, actionable deliverable.`;
+  return `interface:
+  display_name: ${yamlString(skill.displayName)}
+  short_description: ${yamlString(skill.shortDescription)}
+  default_prompt: ${yamlString(defaultPrompt)}
+`;
+}
+
+function renderNotice(skill) {
+  return `Chuhaiqu Playbook Skill: ${skill.displayName} (${skill.name})
+Copyright 2026 Velocity1, LLC
+
+This Skill is based on the Chuhaiqu Playbook by 出海去 (Chuhaiqu):
+https://chuhaiqu.club/playbook
+
+Licensed under the Apache License, Version 2.0. Redistributions must retain
+this NOTICE and the original copyright and attribution notices. Modified
+files must carry prominent notices stating that they were changed.
+
+A clear attribution for redistributed or adapted versions is:
+"Based on the Chuhaiqu Playbook Skills by 出海去 (Chuhaiqu),
+Copyright 2026 Velocity1, LLC."
+
+Third-party materials identified in Playbook citations remain subject to
+their respective rights and terms. The License applies only to material
+that Velocity1, LLC is authorized to license.
+`;
+}
+
 function renderSkill(skill) {
   const routing = skill.referenceRouting.map((route) => {
     const links = route.chapters
@@ -182,6 +212,10 @@ for (const skill of map.skills) {
 
   writeFileSync(join(referencesDir, "INDEX.md"), renderIndex(skill));
   writeFileSync(join(skillDir, "SKILL.md"), renderSkill(skill));
+  mkdirSync(join(skillDir, "agents"), { recursive: true });
+  writeFileSync(join(skillDir, "agents", "openai.yaml"), renderAgentYaml(skill));
+  copyFileSync(join(root, "LICENSE"), join(skillDir, "LICENSE"));
+  writeFileSync(join(skillDir, "NOTICE"), renderNotice(skill));
 }
 
 const corpusSha256 = createHash("sha256")

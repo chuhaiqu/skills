@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计一人公司的经营方式"
+  short_description: "Design a sustainable one-person business system"
+  default_prompt: "Use $solo-business to help me complete this task with a source-grounded, actionable deliverable."

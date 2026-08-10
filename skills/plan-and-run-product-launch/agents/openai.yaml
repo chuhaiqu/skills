@@ -1,4 +1,0 @@
-interface:
-  display_name: "规划并运行产品发布"
-  short_description: "Plan and run a measurable product launch system"
-  default_prompt: "Use $plan-and-run-product-launch to help me complete this task with a source-grounded, actionable deliverable."

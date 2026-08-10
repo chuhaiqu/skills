@@ -1,0 +1,4 @@
+interface:
+  display_name: "运行 Cold Email 与早期销售"
+  short_description: "Run compliant cold email and early sales"
+  default_prompt: "Use $outbound-sales to help me complete this task with a source-grounded, actionable deliverable."

@@ -1,4 +1,0 @@
-interface:
-  display_name: "建立伙伴、Affiliate 与 Referral 计划"
-  short_description: "Build affiliate, referral, and partner programs"
-  default_prompt: "Use $build-partner-and-referral-programs to help me complete this task with a source-grounded, actionable deliverable."

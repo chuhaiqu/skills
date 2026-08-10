@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计可访问、可本地化的产品"
+  short_description: "Design accessible and localizable product delivery"
+  default_prompt: "Use $product-design to help me complete this task with a source-grounded, actionable deliverable."

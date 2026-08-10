@@ -1,4 +1,0 @@
-interface:
-  display_name: "上架并增长 App Store 产品"
-  short_description: "Launch, review, and grow an App Store product"
-  default_prompt: "Use $launch-and-grow-app-store-product to help me complete this task with a source-grounded, actionable deliverable."

@@ -1,4 +1,0 @@
-interface:
-  display_name: "运营跨境电商完整链路"
-  short_description: "Operate cross-border ecommerce end to end"
-  default_prompt: "Use $operate-cross-border-ecommerce to help me complete this task with a source-grounded, actionable deliverable."

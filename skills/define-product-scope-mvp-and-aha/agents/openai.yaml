@@ -1,4 +1,0 @@
-interface:
-  display_name: "定义产品范围、MVP 与 Aha"
-  short_description: "Define product scope, MVP, value path, and Aha"
-  default_prompt: "Use $define-product-scope-mvp-and-aha to help me complete this task with a source-grounded, actionable deliverable."

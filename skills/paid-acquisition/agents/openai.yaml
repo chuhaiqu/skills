@@ -1,0 +1,4 @@
+interface:
+  display_name: "运行付费获客实验"
+  short_description: "Run measurable paid acquisition experiments"
+  default_prompt: "Use $paid-acquisition to help me complete this task with a source-grounded, actionable deliverable."

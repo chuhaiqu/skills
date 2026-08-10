@@ -1,0 +1,4 @@
+interface:
+  display_name: "研究市场、ICP 与竞争"
+  short_description: "Research markets, ICPs, jobs, and competition"
+  default_prompt: "Use $market-research to help me complete this task with a source-grounded, actionable deliverable."

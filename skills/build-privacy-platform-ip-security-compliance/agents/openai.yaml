@@ -1,4 +1,0 @@
-interface:
-  display_name: "建立隐私、平台、IP 与安全合规"
-  short_description: "Build privacy, platform, IP, and security controls"
-  default_prompt: "Use $build-privacy-platform-ip-security-compliance to help me complete this task with a source-grounded, actionable deliverable."

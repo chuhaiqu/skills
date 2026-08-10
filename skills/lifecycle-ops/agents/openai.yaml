@@ -1,0 +1,4 @@
+interface:
+  display_name: "优化 Onboarding、留存与支付运营"
+  short_description: "Improve onboarding, retention, and payment ops"
+  default_prompt: "Use $lifecycle-ops to help me complete this task with a source-grounded, actionable deliverable."

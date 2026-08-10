@@ -1,0 +1,4 @@
+interface:
+  display_name: "建立搜索与 AI 可发现性"
+  short_description: "Build search, authority, and AI discoverability"
+  default_prompt: "Use $search-discovery to help me complete this task with a source-grounded, actionable deliverable."

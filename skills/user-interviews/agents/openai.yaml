@@ -1,0 +1,4 @@
+interface:
+  display_name: "开展用户访谈与行为观察"
+  short_description: "Run behavior-first user interviews and observation"
+  default_prompt: "Use $user-interviews to help me complete this task with a source-grounded, actionable deliverable."

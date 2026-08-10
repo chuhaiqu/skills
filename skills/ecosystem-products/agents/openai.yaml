@@ -1,0 +1,4 @@
+interface:
+  display_name: "验证平台生态产品"
+  short_description: "Validate templates, plugins, and ecosystem products"
+  default_prompt: "Use $ecosystem-products to help me complete this task with a source-grounded, actionable deliverable."

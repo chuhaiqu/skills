@@ -19,7 +19,7 @@ npx skills add chuhaiqu/skill --list
 安装一个指定 Skill：
 
 ```bash
-npx skills add chuhaiqu/skill --skill validate-demand-and-pmf
+npx skills add chuhaiqu/skill --skill demand-validation
 ```
 
 把全部 Skill 全局安装到 Codex 和 Claude Code：
@@ -28,7 +28,7 @@ npx skills add chuhaiqu/skill --skill validate-demand-and-pmf
 npx skills add chuhaiqu/skill --skill '*' -a codex -a claude-code -g -y
 ```
 
-本仓库目前为 private。安装者需要先获得仓库权限，并在本机通过 GitHub CLI、Git credential helper 或 SSH 完成 GitHub 身份验证。
+本仓库公开发布，任何人都可以安装、使用、修改和再分发，但必须遵守下面的署名和变更说明要求。
 
 完整模块见 [CATALOG.md](./CATALOG.md)。
 
@@ -66,4 +66,4 @@ npm run validate
 
 ## 使用许可
 
-本仓库不是开源软件。它采用 [PolyForm Internal Use License 1.0.0](./LICENSE.md)，允许本人或所在公司内部使用和内部修改，但禁止再分发、公开、转售、镜像、打包或冒充为自己的 Skill Set。[NOTICE.md](./NOTICE.md) 进一步说明 Playbook 内容、Skill 文件以及使用 Skill 生成的新工作成果的边界。
+本仓库采用 [Apache License 2.0](./LICENSE)，允许使用、修改和再分发。再分发时必须保留 [NOTICE](./NOTICE)、原始版权与署名；修改过的文件必须明确标注已经修改。推荐署名为：`Based on the Chuhaiqu Playbook Skills by 出海去 (Chuhaiqu), Copyright 2026 Velocity1, LLC.`

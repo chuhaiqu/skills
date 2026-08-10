@@ -1,0 +1,4 @@
+interface:
+  display_name: "按任务训练海外工作英语"
+  short_description: "Build task-based international business English"
+  default_prompt: "Use $business-english to help me complete this task with a source-grounded, actionable deliverable."

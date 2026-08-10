@@ -1,4 +1,0 @@
-interface:
-  display_name: "选择并测试增长渠道"
-  short_description: "Choose and test product-channel fit"
-  default_prompt: "Use $choose-and-test-growth-channels to help me complete this task with a source-grounded, actionable deliverable."

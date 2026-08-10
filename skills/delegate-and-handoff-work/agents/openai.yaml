@@ -1,4 +1,0 @@
-interface:
-  display_name: "委派并交接可验收工作"
-  short_description: "Delegate work with ownership and acceptance checks"
-  default_prompt: "Use $delegate-and-handoff-work to help me complete this task with a source-grounded, actionable deliverable."

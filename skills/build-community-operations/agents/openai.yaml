@@ -1,4 +1,0 @@
-interface:
-  display_name: "建立社区运营系统"
-  short_description: "Build community support, feedback, and retention"
-  default_prompt: "Use $build-community-operations to help me complete this task with a source-grounded, actionable deliverable."

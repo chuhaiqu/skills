@@ -9,25 +9,25 @@
 交互式查看并自由选择：
 
 ```bash
-npx skills add chuhaiqu/skill
+npx skills add chuhaiqu/skills
 ```
 
 只查看可安装的 Skill：
 
 ```bash
-npx skills add chuhaiqu/skill --list
+npx skills add chuhaiqu/skills --list
 ```
 
 安装一个指定 Skill：
 
 ```bash
-npx skills add chuhaiqu/skill --skill demand-validation
+npx skills add chuhaiqu/skills --skill demand-validation
 ```
 
 把全部 Skill 全局安装到 Codex 和 Claude Code：
 
 ```bash
-npx skills add chuhaiqu/skill --skill '*' -a codex -a claude-code -g -y
+npx skills add chuhaiqu/skills --skill '*' -a codex -a claude-code -g -y
 ```
 
 本仓库仍在整理，暂未公开。获得仓库访问权限的测试用户可以安装使用。

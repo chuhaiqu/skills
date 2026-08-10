@@ -1,0 +1,4 @@
+interface:
+  display_name: "选择公司、税务与收款架构"
+  short_description: "Choose company, tax, and payment operations"
+  default_prompt: "Use $choose-company-tax-and-payment-setup to help me complete this task with a source-grounded, actionable deliverable."

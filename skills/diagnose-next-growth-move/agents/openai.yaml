@@ -1,0 +1,4 @@
+interface:
+  display_name: "诊断下一步增长动作"
+  short_description: "Diagnose the next highest-leverage growth move"
+  default_prompt: "Use $diagnose-next-growth-move to help me complete this task with a source-grounded, actionable deliverable."

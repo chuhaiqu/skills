@@ -1,0 +1,4 @@
+interface:
+  display_name: "在 X 建立增长系统"
+  short_description: "Build an evidence-led X growth system"
+  default_prompt: "Use $grow-on-x to help me complete this task with a source-grounded, actionable deliverable."

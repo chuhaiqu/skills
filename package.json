@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "description": "Installable Agent Skills derived from the Chuhaiqu Playbook",
+  "scripts": {
+    "scaffold": "node scripts/scaffold-skills.mjs",
+    "sync": "node scripts/sync-playbook.mjs",
+    "validate": "node scripts/validate-repo.mjs"
+  }
+}

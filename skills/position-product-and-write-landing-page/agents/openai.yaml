@@ -1,0 +1,4 @@
+interface:
+  display_name: "定位产品并写 Landing Page"
+  short_description: "Position a product and write its landing page"
+  default_prompt: "Use $position-product-and-write-landing-page to help me complete this task with a source-grounded, actionable deliverable."

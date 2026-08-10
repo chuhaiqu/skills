@@ -1,0 +1,393 @@
+{
+  "sourceRepository": "https://github.com/chuhaiqu/playbook",
+  "sourceWebsite": "https://chuhaiqu.club/playbook",
+  "sourceCommit": "b95aebe7f3087ec9d4fb4c6c85a95e34a4c97070",
+  "corpusSha256": "b75640f5e76dcce5f5870f1caf54ac01cdae0f510e561e32a0f4ce062c7606c3",
+  "chapterCount": 48,
+  "chapters": [
+    {
+      "number": 1,
+      "file": "01-一人公司不等于一个人做完所有事.md",
+      "title": "一人公司不等于一个人做完所有事",
+      "slug": "solo-company",
+      "sha256": "fe64eea401ecd77aac645294352c29d1067607200ce983e073bd37a4ae141afb",
+      "bytes": 12767
+    },
+    {
+      "number": 2,
+      "file": "02-选择一条适合自己的经营路径.md",
+      "title": "选择一条适合自己的经营路径",
+      "slug": "business-model",
+      "sha256": "c7e734c46cef962039f560f5b9edafefe3df151407897114a3c85279773b3942",
+      "bytes": 14605
+    },
+    {
+      "number": 3,
+      "file": "03-用证据做判断：来源、AI、计划与复盘.md",
+      "title": "用证据做判断：来源、AI、计划与复盘",
+      "slug": "decisions",
+      "sha256": "b1938585aadd738a2e9ce84e9be41b16d143a308831e3dfea39013d4af48c482",
+      "bytes": 13816
+    },
+    {
+      "number": 4,
+      "file": "04-海外工作语言：按真实任务安排训练.md",
+      "title": "海外工作语言：按真实任务安排训练",
+      "slug": "english",
+      "sha256": "4e2929d29b0c77aec9a33047e0b365c6471a9353bbd3ae4086337ee2a0ba6256",
+      "bytes": 14959
+    },
+    {
+      "number": 5,
+      "file": "05-从个人痛点走向可验证的市场.md",
+      "title": "从个人痛点走向可验证的市场",
+      "slug": "market",
+      "sha256": "3b4c76e34a18a4a1f96a77755419a122476d6e7728c0234a9488c1e1849b97cb",
+      "bytes": 13726
+    },
+    {
+      "number": 6,
+      "file": "06-定义核心用户、任务和使用场景.md",
+      "title": "定义核心用户、任务和使用场景",
+      "slug": "users",
+      "sha256": "69f3400ac3bed58eb1c81e5333abae49d4634c79d7845ad417dd520a0da85eb1",
+      "bytes": 14677
+    },
+    {
+      "number": 7,
+      "file": "07-用竞品、关键词和渠道研究建立候选市场.md",
+      "title": "用竞品、关键词和渠道研究建立候选市场",
+      "slug": "research",
+      "sha256": "2a1438686d8c711081aee7cf6615205cccfd38d01b3ea9cf9db6becd99b28eeb",
+      "bytes": 17792
+    },
+    {
+      "number": 8,
+      "file": "08-用户访谈与行为观察：问到真实流程.md",
+      "title": "用户访谈与行为观察：问到真实流程",
+      "slug": "interviews",
+      "sha256": "11610ffdb8631b98695922eb67a4857dd38c5b5e237354af2ca72f5d39785773",
+      "bytes": 19055
+    },
+    {
+      "number": 9,
+      "file": "09-用页面、Waitlist、手工服务和预付验证.md",
+      "title": "用页面、Waitlist、手工服务和预付验证",
+      "slug": "validation",
+      "sha256": "74cd25ddc736da1c784eef4c5219b5c0b6ba3b389b6a87e5912b78e3b6342fd2",
+      "bytes": 25291
+    },
+    {
+      "number": 10,
+      "file": "10-PMF-的证据阶段与调整方向.md",
+      "title": "PMF 的证据阶段与调整方向",
+      "slug": "pmf",
+      "sha256": "600f2ec3a69d6704d9abceeed495204811cac01e656d802fbaf1e0f966bda58a",
+      "bytes": 24300
+    },
+    {
+      "number": 11,
+      "file": "11-核心用户、产品范围和功能取舍.md",
+      "title": "核心用户、产品范围和功能取舍",
+      "slug": "scope",
+      "sha256": "b47fe44d567abc30f4ddcb27146929c95188bbce01c924f4b2d051753851e534",
+      "bytes": 28518
+    },
+    {
+      "number": 12,
+      "file": "12-把需求写成可交接、可验收的任务.md",
+      "title": "把需求写成可交接、可验收的任务",
+      "slug": "requirements",
+      "sha256": "7887d367d69c8297a90d8bdd62f418894f47c886b2bb15fa8e118ae627b4b77c",
+      "bytes": 29437
+    },
+    {
+      "number": 13,
+      "file": "13-MVP、最短价值路径与-Aha-Moment.md",
+      "title": "MVP、最短价值路径与 Aha Moment",
+      "slug": "mvp",
+      "sha256": "432404444cafffeb1f31781aac35725d02d17ca507521a1d7675b8b37f9b115d",
+      "bytes": 29396
+    },
+    {
+      "number": 14,
+      "file": "14-定位、价值主张与产品叙事.md",
+      "title": "定位、价值主张与产品叙事",
+      "slug": "positioning",
+      "sha256": "e19ef74ec89acb0b3320c9c348d3b35a1e09f624ea1f963ba3134920f44fa9f3",
+      "bytes": 29748
+    },
+    {
+      "number": 15,
+      "file": "15-Landing-Page：把信息排成一条决策路径.md",
+      "title": "Landing Page：把信息排成一条决策路径",
+      "slug": "landing-page",
+      "sha256": "c2d7d7afe57fc53fcc6fbb8933917e600238823fc3cb39ebed2acba6ecc20050",
+      "bytes": 26939
+    },
+    {
+      "number": 16,
+      "file": "16-设计基础、可访问性与本地化.md",
+      "title": "设计基础、可访问性与本地化",
+      "slug": "design",
+      "sha256": "37402da57fdd53694cd0a1f76c1c3aed6ec080446bea1f417bf462d64377ce0b",
+      "bytes": 28410
+    },
+    {
+      "number": 17,
+      "file": "17-用模板、Framer-和-AI-完成可接管的设计交付.md",
+      "title": "用模板、Framer 和 AI 完成可接管的设计交付",
+      "slug": "design-handoff",
+      "sha256": "7e3e37cb43566d61eaceebcbbf91a1df0c5e116b6afa30d1ed62377db95582ad",
+      "bytes": 27784
+    },
+    {
+      "number": 18,
+      "file": "18-定价研究、价值分组与套餐设计.md",
+      "title": "定价研究、价值分组与套餐设计",
+      "slug": "pricing",
+      "sha256": "f9135eb55a969e0960563e882c9b89a0995dabdd3316c050ba5edf7dc24f8e45",
+      "bytes": 25418
+    },
+    {
+      "number": 19,
+      "file": "19-Trial、Freemium、退款与首次付费.md",
+      "title": "Trial、Freemium、退款与首次付费",
+      "slug": "trial",
+      "sha256": "f5841a7e47d5ea2171496530df5e325c3c288cd13802695173e38f78668ff0d0",
+      "bytes": 21265
+    },
+    {
+      "number": 20,
+      "file": "20-月付、年付、LTD-与用量计费.md",
+      "title": "月付、年付、LTD 与用量计费",
+      "slug": "billing",
+      "sha256": "853eff5521707f3660efa18b7549c2222e2c1d19ad17cfc041d7f16e951385a6",
+      "bytes": 21714
+    },
+    {
+      "number": 21,
+      "file": "21-单位经济：CAC、LTV、ROI、回收期与渠道容量.md",
+      "title": "单位经济：CAC、LTV、ROI、回收期与渠道容量",
+      "slug": "economics",
+      "sha256": "8d95a31776779c6ebbf86026a02bc2ab22bbf032576700f8374214894a6686b6",
+      "bytes": 20514
+    },
+    {
+      "number": 22,
+      "file": "22-发布不是一天：建立预热、上线和复盘系统.md",
+      "title": "发布不是一天：建立预热、上线和复盘系统",
+      "slug": "launch",
+      "sha256": "b2410706e5707f8a6f5221443381d5f86f9b2984bf071f0772653450d925771e",
+      "bytes": 22674
+    },
+    {
+      "number": 23,
+      "file": "23-Product-Hunt：适用条件、当日执行与长期价值.md",
+      "title": "Product Hunt：适用条件、当日执行与长期价值",
+      "slug": "product-hunt",
+      "sha256": "ebad339dbbbc317fe7f8fd728bd1ae41aa9d5cbeb67dbacdba74920d4efd75e7",
+      "bytes": 23821
+    },
+    {
+      "number": 24,
+      "file": "24-App-Store-发布与审核沟通.md",
+      "title": "App Store 发布与审核沟通",
+      "slug": "app-store",
+      "sha256": "56191e8ab47b814f5de7e493cfc3d5ba758ac33952054292bbf8f01280cc5b48",
+      "bytes": 23472
+    },
+    {
+      "number": 25,
+      "file": "25-ASO-与-Apple-Ads：从曝光到下载.md",
+      "title": "ASO 与 Apple Ads：从曝光到下载",
+      "slug": "aso",
+      "sha256": "e4507a64407204b03007cf4aa67e1ce5f5d5bd59d6f02c3868ba8044f718be27",
+      "bytes": 23699
+    },
+    {
+      "number": 26,
+      "file": "26-平台生态产品：模板、插件、开源与垂直应用.md",
+      "title": "平台生态产品：模板、插件、开源与垂直应用",
+      "slug": "ecosystems",
+      "sha256": "08a4bc0b7e0f98b5881968d16827803cf853e44876221dab616564bf1caba2e1",
+      "bytes": 25527
+    },
+    {
+      "number": 27,
+      "file": "27-把内容当成产品和经营资产.md",
+      "title": "把内容当成产品和经营资产",
+      "slug": "content",
+      "sha256": "1d470cb70fe145c7f241a0c692b3d96de1d7c5bf130166db9b07240dcbf51d9f",
+      "bytes": 29125
+    },
+    {
+      "number": 28,
+      "file": "28-Build-in-Public-与个人品牌的长期边界.md",
+      "title": "Build in Public 与个人品牌的长期边界",
+      "slug": "build-public",
+      "sha256": "adad6c45442a01f859a40a910ef9199935c83a891d569df5bec89f69ee795504",
+      "bytes": 26100
+    },
+    {
+      "number": 29,
+      "file": "29-X-冷启动：身份、Profile、关系与第一批反馈.md",
+      "title": "X 冷启动：身份、Profile、关系与第一批反馈",
+      "slug": "x-profile",
+      "sha256": "829d57ee23d0b56ddeecfcdd10c0888ca0f8fe00bb32112e10636be1cb00ff17",
+      "bytes": 24955
+    },
+    {
+      "number": 30,
+      "file": "30-X-内容系统：选题、素材、结构与复盘.md",
+      "title": "X 内容系统：选题、素材、结构与复盘",
+      "slug": "x-content",
+      "sha256": "412dbcbf0a4cfc8f841f998d0f6c4d565238a8cbe869fb73976fdd756e0b7ae0",
+      "bytes": 27498
+    },
+    {
+      "number": 31,
+      "file": "31-跨平台内容治理：复用、多账号与创作者协作.md",
+      "title": "跨平台内容治理：复用、多账号与创作者协作",
+      "slug": "repurposing",
+      "sha256": "314a4d9f1a9317c11fc33e84c623b9954c7ad1694d9ed3e5c3ef6e27e35f369a",
+      "bytes": 31399
+    },
+    {
+      "number": 32,
+      "file": "32-低制作负担的-YouTube-增长系统.md",
+      "title": "低制作负担的 YouTube 增长系统",
+      "slug": "youtube",
+      "sha256": "7ddc7b68f16903034fc2e3d25198029822b824dfee5f808bdf9b689c7873b7e3",
+      "bytes": 27222
+    },
+    {
+      "number": 33,
+      "file": "33-SEO：从查询意图到页面、技术与测量.md",
+      "title": "SEO：从查询意图到页面、技术与测量",
+      "slug": "seo",
+      "sha256": "f7f89ff6b2d1c212ebd1dd9ea34ae8630ce56a13ef46308b2d97a5c9f97ba60a",
+      "bytes": 28780
+    },
+    {
+      "number": 34,
+      "file": "34-建立可发现和引用的资产：外链、免费工具、Programmatic-SEO-与-AI-搜索.md",
+      "title": "建立可发现和引用的资产：外链、免费工具、Programmatic SEO 与 AI 搜索",
+      "slug": "authority",
+      "sha256": "84e8bf55d788a7c94a06352ac52b67ea1fe4b5653d1a5966c09199649232503a",
+      "bytes": 29009
+    },
+    {
+      "number": 35,
+      "file": "35-Product-Channel-Fit-与-30-天低成本学习循环.md",
+      "title": "Product–Channel Fit 与 30 天低成本学习循环",
+      "slug": "channels",
+      "sha256": "b3c2608c2f33abe63ec34591edfd61ba1a2f4289dc1f97f8fef70249dfd93935",
+      "bytes": 27110
+    },
+    {
+      "number": 36,
+      "file": "36-付费获客基础：资产、指标、预算和实验.md",
+      "title": "付费获客基础：资产、指标、预算和实验",
+      "slug": "acquisition",
+      "sha256": "6aee02c0c33a6a504c31ba38730a1049ea336a3825b8c869c6aa555595921d2a",
+      "bytes": 28275
+    },
+    {
+      "number": 37,
+      "file": "37-Meta-与-Google-Ads：沿漏斗定位损失.md",
+      "title": "Meta 与 Google Ads：沿漏斗定位损失",
+      "slug": "ads",
+      "sha256": "b74f495f0c66d24662f10e105bfd3f43652c3248b09b99a9045d0f6f61ebaa5e",
+      "bytes": 30014
+    },
+    {
+      "number": 38,
+      "file": "38-创作者营销：选号、Brief、归因与放大.md",
+      "title": "创作者营销：选号、Brief、归因与放大",
+      "slug": "creators",
+      "sha256": "f00f9b91dca7b6e44740b428d0fe1a552798f3d8d120e4fa15b7cfecc2748414",
+      "bytes": 33088
+    },
+    {
+      "number": 39,
+      "file": "39-用社区和-Discord-承接支持、反馈与留存.md",
+      "title": "用社区和 Discord 承接支持、反馈与留存",
+      "slug": "community",
+      "sha256": "cb2c7cd967f63572446a614d808c23d8bd34ee379ef2f60605c52d146c000b31",
+      "bytes": 31230
+    },
+    {
+      "number": 40,
+      "file": "40-Cold-Email-与早期销售：从可搜索-ICP-到-Pipeline.md",
+      "title": "Cold Email 与早期销售：从可搜索 ICP 到 Pipeline",
+      "slug": "outbound",
+      "sha256": "4e6e7670049778aa45aa99a7d704b977fdc89d4531228ab332b81deaffe17ef0",
+      "bytes": 28495
+    },
+    {
+      "number": 41,
+      "file": "41-Affiliate、Referral-与合作伙伴：激励、折扣、归因与退出.md",
+      "title": "Affiliate、Referral 与合作伙伴：激励、折扣、归因与退出",
+      "slug": "affiliates",
+      "sha256": "ae7b343fbc7ba1df662e8c95bef62d07d6b1b34904327bd838a26a92004af536",
+      "bytes": 22492
+    },
+    {
+      "number": 42,
+      "file": "42-Onboarding、Aha-Moment-与漏斗诊断.md",
+      "title": "Onboarding、Aha Moment 与漏斗诊断",
+      "slug": "onboarding",
+      "sha256": "cc3ce741c2358a0f5925b2e250a8db3f97f08e7f3f01615307dc804ad82bf1fd",
+      "bytes": 28758
+    },
+    {
+      "number": 43,
+      "file": "43-邮件、支持、留存、退款与支付风控.md",
+      "title": "邮件、支持、留存、退款与支付风控",
+      "slug": "retention",
+      "sha256": "d3277284906fd63a201c47470a4f0c46422b3beb1420d629ab90e87ceabc6d1d",
+      "bytes": 30524
+    },
+    {
+      "number": 44,
+      "file": "44-跨境电商完整经营链：选品、履约、转化与复购.md",
+      "title": "跨境电商完整经营链：选品、履约、转化与复购",
+      "slug": "ecommerce",
+      "sha256": "b24d30ba4e8b4d3e2f1cc63ff0af2ff04d1833c355660e80af2d1bb10365ee45",
+      "bytes": 28156
+    },
+    {
+      "number": 45,
+      "file": "45-什么时候注册公司，怎样选择主体和收款链路.md",
+      "title": "什么时候注册公司，怎样选择主体和收款链路",
+      "slug": "company",
+      "sha256": "663c21e126016fe6185456a368791cf4cf7434e9979aa17cb111cc630e7d0a0c",
+      "bytes": 27095
+    },
+    {
+      "number": 46,
+      "file": "46-税务日历、跨境资金与团队安排.md",
+      "title": "税务日历、跨境资金与团队安排",
+      "slug": "tax",
+      "sha256": "8aae57cd17840f49197879b3c9aec5ced1af18aaef13bd07c67fcc272f48837d",
+      "bytes": 27715
+    },
+    {
+      "number": 47,
+      "file": "47-数据地图、GDPR、合同与隐私运营.md",
+      "title": "数据地图、GDPR、合同与隐私运营",
+      "slug": "privacy",
+      "sha256": "7252e2e55bef5d06b026932ba612d919d43ff811e49057921cd5e9919841f40f",
+      "bytes": 32140
+    },
+    {
+      "number": 48,
+      "file": "48-平台政策、知识产权、安全与分阶段合规.md",
+      "title": "平台政策、知识产权、安全与分阶段合规",
+      "slug": "compliance",
+      "sha256": "5750a2d930a5c5ef5db3b15580202ed815d31bc91f7fc94382a2e76f534d4e9c",
+      "bytes": 35873
+    }
+  ]
+}

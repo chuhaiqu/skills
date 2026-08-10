@@ -1,0 +1,68 @@
+# Skill Catalog
+
+共 30 个可独立选择的 Skill。模块按用户要完成的工作划分，不按 48 章一一映射。
+
+## 诊断与经营
+
+| Skill | 中文名 | 完成的工作 |
+| --- | --- | --- |
+| `diagnose-next-growth-move` | 诊断下一步增长动作 | 把模糊的增长焦虑收敛为一个有证据、可执行、可复盘的下一步动作。 |
+| `design-one-person-business` | 设计一人公司的经营方式 | 选择与个人能力、现金、风险和生活约束相匹配的经营路径，并明确本人必须拥有的责任。 |
+| `make-evidence-based-decisions` | 用证据做经营决策 | 让一个经营判断可以追溯来源、暴露假设、指导行动并在结果出现后更新规则。 |
+| `train-business-english-by-task` | 按任务训练海外工作英语 | 把泛化的英语焦虑改造成围绕真实工作任务的输入、练习、反馈和复盘系统。 |
+| `delegate-and-handoff-work` | 委派并交接可验收工作 | 把一个模糊委托变成可执行、可验收、可接管且权利和权限清楚的工作包。 |
+
+## 市场与产品
+
+| Skill | 中文名 | 完成的工作 |
+| --- | --- | --- |
+| `research-market-icp-and-competition` | 研究市场、ICP 与竞争 | 把个人痛点或产品想法转成有付费主体、真实任务、替代方案和可触达渠道的候选市场。 |
+| `run-user-interviews-and-observation` | 开展用户访谈与行为观察 | 从真实过去行为和现有流程中找到问题、替代方案、约束和付费线索，而不是收集礼貌性的意见。 |
+| `validate-demand-and-pmf` | 验证需求与 PMF | 用最短、合规、可逆的实验验证最关键风险，并把兴趣、行为、付费和留存证据分层。 |
+| `define-product-scope-mvp-and-aha` | 定义产品范围、MVP 与 Aha | 让首版产品以最短但完整的路径交付一次可验证价值，并留下清楚的取舍理由。 |
+| `position-product-and-write-landing-page` | 定位产品并写 Landing Page | 把真实用户、任务、替代方案和产品证据排成一条能支持目标行动的页面决策路径。 |
+| `design-accessible-localized-product` | 设计可访问、可本地化的产品 | 在真实内容、状态、语言和设备中完成可访问、可本地化、可维护和可接管的设计交付。 |
+
+## 定价与发布
+
+| Skill | 中文名 | 完成的工作 |
+| --- | --- | --- |
+| `design-pricing-billing-and-trials` | 设计定价、计费与首次付费 | 让价值、计费单位、套餐、首次付费路径、现金和履约义务形成一致的经营系统。 |
+| `model-unit-economics-and-channel-capacity` | 核算单位经济与渠道容量 | 用同一核算单位连接净收入、完整成本、客户价值、现金回收和渠道上限。 |
+| `plan-and-run-product-launch` | 规划并运行产品发布 | 把发布从单日曝光变成包含承接、分发、测量、反馈和长期资产的可重复系统。 |
+| `launch-and-grow-app-store-product` | 上架并增长 App Store 产品 | 让 App 从可复现审核、准确披露和清晰元数据进入持续的商店曝光—下载—价值—收入循环。 |
+| `validate-platform-ecosystem-product` | 验证平台生态产品 | 在平台依赖、用户任务、付费主体、分发、成本和退出风险都清楚的前提下验证一个生态机会。 |
+
+## 内容与自然增长
+
+| Skill | 中文名 | 完成的工作 |
+| --- | --- | --- |
+| `build-content-operating-system` | 建立内容经营系统 | 把材料、内容、发布和产品信号连接成有来源、有权利边界、可复用、可维护的经营系统。 |
+| `grow-on-x` | 在 X 建立增长系统 | 在目标用户确实存在于 X 的前提下，用身份、关系、内容和产品反馈形成可持续增长循环。 |
+| `grow-on-youtube` | 建立低负担 YouTube 增长系统 | 围绕一个稳定受众任务建立制作负担可控、可诊断并能连接产品结果的视频系统。 |
+| `build-search-and-ai-discovery` | 建立搜索与 AI 可发现性 | 把真实查询意图转成可抓取、可理解、可引用、可维护并能连接业务结果的公开资产。 |
+
+## 获客与外部协作
+
+| Skill | 中文名 | 完成的工作 |
+| --- | --- | --- |
+| `choose-and-test-growth-channels` | 选择并测试增长渠道 | 根据用户行为、产品形态、单位经济和团队能力选择一个可学习的主渠道，而不是同时铺开。 |
+| `run-paid-acquisition` | 运行付费获客实验 | 用完整路径、可靠口径和可承受预算判断广告问题发生在哪一层，并只在单位经济允许时放量。 |
+| `run-creator-marketing` | 运行创作者营销项目 | 把创作者合作从单条内容采购变成有选择逻辑、创意边界、权利、归因和经营复盘的项目。 |
+| `build-community-operations` | 建立社区运营系统 | 让社区承担明确的支持、反馈、关系和留存任务，而不是只追求成员数量和消息量。 |
+| `run-cold-email-and-early-sales` | 运行 Cold Email 与早期销售 | 从可搜索 ICP 到真实商业结果建立合规、低压力、可诊断的早期销售链路。 |
+| `build-partner-and-referral-programs` | 建立伙伴、Affiliate 与 Referral 计划 | 让激励、单位经济、真实增量、权利义务、支付和退出规则共同成立。 |
+
+## 运营与履约
+
+| Skill | 中文名 | 完成的工作 |
+| --- | --- | --- |
+| `improve-onboarding-retention-and-payment-ops` | 优化 Onboarding、留存与支付运营 | 把首次价值、持续价值、沟通、支持、退款和支付风险接成可测量且可恢复的用户状态系统。 |
+| `operate-cross-border-ecommerce` | 运营跨境电商完整链路 | 把选品、获客、页面、支付、履约、售后和复购放进同一条净收入与现金链路。 |
+
+## 公司与合规
+
+| Skill | 中文名 | 完成的工作 |
+| --- | --- | --- |
+| `choose-company-tax-and-payment-setup` | 选择公司、税务与收款架构 | 从真实业务触发条件出发选择可运营的主体和收款链路，并把持续义务做成有负责人和证据的日历。 |
+| `build-privacy-platform-ip-security-compliance` | 建立隐私、平台、IP 与安全合规 | 把抽象合规要求转换成与真实数据流、平台、内容、合作方和发布阶段相匹配的可复核经营控制。 |

@@ -1,0 +1,4 @@
+interface:
+  display_name: "运行创作者营销项目"
+  short_description: "Run creator marketing with rights and attribution"
+  default_prompt: "Use $run-creator-marketing to help me complete this task with a source-grounded, actionable deliverable."

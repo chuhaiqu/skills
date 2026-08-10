@@ -1,0 +1,4 @@
+interface:
+  display_name: "核算单位经济与渠道容量"
+  short_description: "Model unit economics, payback, and channel capacity"
+  default_prompt: "Use $model-unit-economics-and-channel-capacity to help me complete this task with a source-grounded, actionable deliverable."

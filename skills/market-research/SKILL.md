@@ -9,7 +9,7 @@ description: "Use when the user needs to turn a problem or idea into a testable 
 
 把个人痛点或产品想法转成有付费主体、真实任务、替代方案和可触达渠道的候选市场。
 
-不适用：需要直接访谈真实用户时，使用 user-interviews；需要跑验证实验时，使用 demand-validation。
+不适用：需要直接访谈真实用户时，使用 user-interviews；需要跑验证实验时，使用 user-need-validation。
 
 ## 开始前
 

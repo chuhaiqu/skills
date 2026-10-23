@@ -9,7 +9,7 @@ description: "Use when the user needs an interview plan, recruiting criteria, in
 
 从真实过去行为和现有流程中找到问题、替代方案、约束和付费线索，而不是收集礼貌性的意见。
 
-不适用：桌面市场研究使用 market-research；页面、预付或手工服务实验使用 demand-validation。
+不适用：桌面市场研究使用 market-research；页面、预付或手工服务实验使用 user-need-validation。
 
 ## 开始前
 

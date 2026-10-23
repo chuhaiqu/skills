@@ -9,7 +9,7 @@ description: "Use when evaluating or launching a template, plugin, open-source b
 
 在平台依赖、用户任务、付费主体、分发、成本和退出风险都清楚的前提下验证一个生态机会。
 
-不适用：普通 SaaS 市场验证使用 demand-validation。
+不适用：普通 SaaS 市场验证使用 user-need-validation。
 
 ## 开始前
 

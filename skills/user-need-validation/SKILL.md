@@ -1,9 +1,9 @@
 ---
-name: demand-validation
-description: "Use when the user needs to design a landing-page, waitlist, concierge, preorder, or payment experiment, or diagnose the current PMF evidence stage; triggers include 需求验证、Waitlist、预售、预付、PMF、假门测试 and 验证实验."
+name: user-need-validation
+description: "Use when validating user needs through landing-page, waitlist, concierge, preorder, or payment experiments, or assessing the current PMF evidence stage; triggers include 用户需求验证、需求验证、Waitlist、预售、预付、PMF、假门测试 and 验证实验."
 ---
 
-# 验证需求与 PMF
+# 验证用户需求与 PMF
 
 ## 目标
 

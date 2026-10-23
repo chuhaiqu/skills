@@ -9,7 +9,7 @@
 | 业务板块 | 可以解决的问题 |
 | --- | --- |
 | 诊断与经营 | 判断下一步先做什么，设计一人公司经营方式，用证据决策，把工作交接清楚 |
-| 市场与产品 | 研究市场和 ICP，开展用户访谈，验证需求，定义 MVP，完成定位、页面与产品设计 |
+| 市场与产品 | 研究市场和 ICP，开展用户访谈，验证用户需求，定义 MVP，完成定位、页面与产品设计 |
 | 定价与发布 | 设计套餐和计费，核算单位经济，组织产品发布，完成 App Store 上架与增长 |
 | 内容与自然增长 | 建立内容系统，运营 X 与 YouTube，获得搜索和 AI 搜索可见性 |
 | 获客与外部协作 | 选择增长渠道，运行广告、创作者营销、社区、Cold Email 与伙伴计划 |
@@ -35,7 +35,7 @@ npx skills add chuhaiqu/skills --list
 安装一个指定 Skill：
 
 ```bash
-npx skills add chuhaiqu/skills --skill demand-validation
+npx skills add chuhaiqu/skills --skill user-need-validation
 ```
 
 把全部 Skill 全局安装到 Codex 和 Claude Code：
@@ -44,14 +44,12 @@ npx skills add chuhaiqu/skills --skill demand-validation
 npx skills add chuhaiqu/skills --skill '*' -a codex -a claude-code -g -y
 ```
 
-本仓库仍在整理，暂未公开。获得仓库访问权限的测试用户可以安装使用。
-
 安装后，可以直接把你的真实业务上下文交给 Agent：
 
 ```text
 使用 growth-diagnosis，结合我目前的产品阶段、数据和资源，判断未来 30 天最应该推进的一件事。
 
-使用 demand-validation，把这个产品想法变成一个两周内可以完成的付费验证实验。
+使用 user-need-validation，把这个产品想法变成一个两周内可以完成的用户需求与付费验证实验。
 
 使用 product-positioning，根据这些访谈记录完成定位、Landing Page 结构和可直接使用的文案。
 
@@ -76,7 +74,7 @@ npx skills add chuhaiqu/skills --skill '*' -a codex -a claude-code -g -y
 | --- | --- | --- |
 | [`market-research`](./skills/market-research/) | 把个人痛点或产品想法转成有付费主体、真实任务、替代方案和可触达渠道的候选市场。 | 候选市场定义、ICP/JTBD/场景卡、替代方案与竞品地图、关键词和渠道证据表 |
 | [`user-interviews`](./skills/user-interviews/) | 从真实过去行为和现有流程中找到问题、替代方案、约束和付费线索，而不是收集礼貌性的意见。 | 招募标准与邀请文案、行为型访谈提纲、统一访谈记录、证据归纳与下一步建议 |
-| [`demand-validation`](./skills/demand-validation/) | 用最短、合规、可逆的实验验证最关键风险，并把兴趣、行为、付费和留存证据分层。 | 验证假设卡、实验设计与埋点口径、验证台账、PMF 证据阶段与决定 |
+| [`user-need-validation`](./skills/user-need-validation/) | 验证用户需求（User Need Validation），用最短、合规、可逆的实验验证最关键风险，并把兴趣、行为、付费和留存证据分层。 | 验证假设卡、实验设计与埋点口径、验证台账、PMF 证据阶段与决定 |
 | [`product-scope`](./skills/product-scope/) | 让首版产品以最短但完整的路径交付一次可验证价值，并留下清楚的取舍理由。 | 核心用户与任务定义、最短价值路径、MVP 范围与功能决策表、Aha/TTFV 测量方案 |
 | [`product-positioning`](./skills/product-positioning/) | 把真实用户、任务、替代方案和产品证据排成一条能支持目标行动的页面决策路径。 | 定位事实表、一页产品叙事、Landing Page 结构与可直接使用的文案、事件与理解测试计划 |
 | [`product-design`](./skills/product-design/) | 在真实内容、状态、语言和设备中完成可访问、可本地化、可维护和可接管的设计交付。 | 设计约束与内容清单、组件和状态验收表、可访问性与本地化审查、资产权利和接管清单 |

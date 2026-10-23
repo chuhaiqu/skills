@@ -1,0 +1,4 @@
+interface:
+  display_name: "验证用户需求与 PMF"
+  short_description: "Validate user needs, payment signals, and PMF stage"
+  default_prompt: "Use $user-need-validation to help me complete this task with a source-grounded, actionable deliverable."

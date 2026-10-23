@@ -132,7 +132,7 @@
       "shortDescription": "Research markets, ICPs, jobs, and competition",
       "description": "Use when the user needs to turn a problem or idea into a testable market, ICP, job, scenario, competitor map, keyword set, or channel hypothesis; triggers include 市场研究、ICP、JTBD、竞品、关键词、使用场景 and 候选市场.",
       "goal": "把个人痛点或产品想法转成有付费主体、真实任务、替代方案和可触达渠道的候选市场。",
-      "notFor": "需要直接访谈真实用户时，使用 user-interviews；需要跑验证实验时，使用 demand-validation。",
+      "notFor": "需要直接访谈真实用户时，使用 user-interviews；需要跑验证实验时，使用 user-need-validation。",
       "sources": [5, 6, 7],
       "referenceRouting": [
         { "sources": [5], "when": "从个人痛点识别付费者、使用者、受益者和问题强度" },
@@ -155,7 +155,7 @@
       "shortDescription": "Run behavior-first user interviews and observation",
       "description": "Use when the user needs an interview plan, recruiting criteria, interview guide, workflow observation, notes synthesis, or evidence from real past behavior; triggers include 用户访谈、需求访谈、行为观察、招募、问题清单 and 访谈复盘.",
       "goal": "从真实过去行为和现有流程中找到问题、替代方案、约束和付费线索，而不是收集礼貌性的意见。",
-      "notFor": "桌面市场研究使用 market-research；页面、预付或手工服务实验使用 demand-validation。",
+      "notFor": "桌面市场研究使用 market-research；页面、预付或手工服务实验使用 user-need-validation。",
       "sources": [6, 8],
       "referenceRouting": [
         { "sources": [6], "when": "收紧招募对象、核心任务和使用场景" },
@@ -172,10 +172,10 @@
     },
     {
       "group": "market",
-      "name": "demand-validation",
-      "displayName": "验证需求与 PMF",
-      "shortDescription": "Validate demand, payment signals, and PMF stage",
-      "description": "Use when the user needs to design a landing-page, waitlist, concierge, preorder, or payment experiment, or diagnose the current PMF evidence stage; triggers include 需求验证、Waitlist、预售、预付、PMF、假门测试 and 验证实验.",
+      "name": "user-need-validation",
+      "displayName": "验证用户需求与 PMF",
+      "shortDescription": "Validate user needs, payment signals, and PMF stage",
+      "description": "Use when validating user needs through landing-page, waitlist, concierge, preorder, or payment experiments, or assessing the current PMF evidence stage; triggers include 用户需求验证、需求验证、Waitlist、预售、预付、PMF、假门测试 and 验证实验.",
       "goal": "用最短、合规、可逆的实验验证最关键风险，并把兴趣、行为、付费和留存证据分层。",
       "notFor": "只做市场桌面研究时使用 market-research；进入产品范围设计后使用 product-scope。",
       "sources": [5, 9, 10],
@@ -359,7 +359,7 @@
       "shortDescription": "Validate templates, plugins, and ecosystem products",
       "description": "Use when evaluating or launching a template, plugin, open-source business, API product, marketplace extension, or vertical app built on another platform; triggers include 模板生意、插件、开源商业化、平台生态、API 产品、Marketplace and 垂直应用.",
       "goal": "在平台依赖、用户任务、付费主体、分发、成本和退出风险都清楚的前提下验证一个生态机会。",
-      "notFor": "普通 SaaS 市场验证使用 demand-validation。",
+      "notFor": "普通 SaaS 市场验证使用 user-need-validation。",
       "sources": [2, 7, 9, 21, 26],
       "referenceRouting": [
         { "sources": [26], "when": "选择模板、插件、开源或垂直应用形态并运行六周验证" },

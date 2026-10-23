@@ -38,6 +38,12 @@ npx skills add chuhaiqu/skills --list
 npx skills add chuhaiqu/skills --skill user-need-validation
 ```
 
+安装 SEO 与 GEO：
+
+```bash
+npx skills add chuhaiqu/skills --skill seo-geo
+```
+
 把全部 Skill 全局安装到 Codex 和 Claude Code：
 
 ```bash
@@ -54,6 +60,8 @@ npx skills add chuhaiqu/skills --skill '*' -a codex -a claude-code -g -y
 使用 product-positioning，根据这些访谈记录完成定位、Landing Page 结构和可直接使用的文案。
 
 使用 channel-fit，比较我现在可选的获客渠道，只选一个主渠道并制定 30 天学习计划。
+
+使用 seo-geo，检查我的网站，给出关键词、页面结构与 AI 搜索可见性的优化清单。
 ```
 
 ## Skills 能力清单
@@ -96,7 +104,7 @@ npx skills add chuhaiqu/skills --skill '*' -a codex -a claude-code -g -y
 | [`content-system`](./skills/content-system/) | 把材料、内容、发布和产品信号连接成有来源、有权利边界、可复用、可维护的经营系统。 | 材料与权利清单、内容对象和网络地图、披露与多账号治理规则、四周内容运营计划 |
 | [`x-growth`](./skills/x-growth/) | 在目标用户确实存在于 X 的前提下，用身份、关系、内容和产品反馈形成可持续增长循环。 | X 渠道与身份定义、Profile 和关系研究方案、选题/素材/结构系统、两周冷启动与四周内容日历 |
 | [`youtube-growth`](./skills/youtube-growth/) | 围绕一个稳定受众任务建立制作负担可控、可诊断并能连接产品结果的视频系统。 | 频道模型与边界、四周选题和制作计划、单期视频 Brief、视频到产品的诊断表 |
-| [`search-discovery`](./skills/search-discovery/) | 把真实查询意图转成可抓取、可理解、可引用、可维护并能连接业务结果的公开资产。 | 查询意图与页面地图、技术 SEO 检查、可链接/可引用资产计划、四周搜索与 AI 可见性实验 |
+| [`seo-geo`](./skills/seo-geo/) | SEO（搜索引擎优化）与 GEO（生成式引擎优化）：研究关键词、规划页面、优化内容，让网站更容易被搜索引擎找到、被 AI 搜索引用。 | 查询意图与页面地图、技术 SEO 检查、可链接/可引用资产计划、四周搜索与 AI 可见性实验 |
 
 ### 获客与外部协作
 

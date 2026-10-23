@@ -445,9 +445,9 @@
     },
     {
       "group": "organic",
-      "name": "search-discovery",
-      "displayName": "建立搜索与 AI 可发现性",
-      "shortDescription": "Build search, authority, and AI discoverability",
+      "name": "seo-geo",
+      "displayName": "SEO 与 GEO",
+      "shortDescription": "Improve search visibility with SEO and GEO",
       "description": "Use when the user needs keyword-to-page mapping, SEO architecture, technical SEO, linkable assets, free tools, programmatic SEO, authority building, or AI-search citation visibility; triggers include SEO、关键词、页面地图、外链、免费工具、Programmatic SEO、GEO and AI 搜索.",
       "goal": "把真实查询意图转成可抓取、可理解、可引用、可维护并能连接业务结果的公开资产。",
       "notFor": "仅做付费搜索广告时使用 paid-acquisition。",

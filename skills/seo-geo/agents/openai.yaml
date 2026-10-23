@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO 与 GEO"
+  short_description: "Improve search visibility with SEO and GEO"
+  default_prompt: "Use $seo-geo to help me complete this task with a source-grounded, actionable deliverable."

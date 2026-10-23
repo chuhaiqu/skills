@@ -1,9 +1,9 @@
 ---
-name: search-discovery
+name: seo-geo
 description: "Use when the user needs keyword-to-page mapping, SEO architecture, technical SEO, linkable assets, free tools, programmatic SEO, authority building, or AI-search citation visibility; triggers include SEO、关键词、页面地图、外链、免费工具、Programmatic SEO、GEO and AI 搜索."
 ---
 
-# 建立搜索与 AI 可发现性
+# SEO 与 GEO
 
 ## 目标
 
